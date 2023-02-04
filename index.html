@@ -15,7 +15,10 @@
     <title>Blogr</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/style-header.css">
+    <link rel="stylesheet" href="./assets/css/style-main.css">
+    <link rel="stylesheet" href="./assets/css/style-footer.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
@@ -25,71 +28,77 @@
 <body>
 
     <header>
-        <section class="nav-bar">
-            <img src="./assets/images/logo.svg" alt="Logo" class="nav-bar__logo">
-            <nav>
-                <a href="" class="nav-bar__link">Product</a>
-                <a href="" class="nav-bar__link">Company</a>
-                <a href="" class="nav-bar__link">Connect</a>
-            </nav>
-            <button class="nav-bar__btn" id="login">Login</button>
-            <button class="nav-bar__btn --sign-star" id="sign-up">Sign Up</button>
-        </section>
-        <section class="action">
-            <div class="action__image--desktop" aria-label="Background pattern intro"></div>
-            <div class="action__image--mobile" aria-label="Background pattern intro"></div>
-            <h1 class="action__title">A modern publishing platform</h1>
-            <p class="action__paragraph">Grow your audience and build your online brand</p>
-            <button class="action__btn">Start for Free</button>
-            <button class="action__btn --sign-start">Learn More</button>
+        <div class="gradient--header"></div>
+        <section class="header__background">
+            <section class="nav">
+                <img src="./assets/images/logo.svg" alt="Logo" class="nav__logo">
+                <nav class="nav__bar">
+                    <a href="" class="nav__link">
+                        Product<img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"></a>
+                    <a href="" class="nav__link">
+                        Company<img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"></a>
+                    <a href="" class="nav__link">
+                        Connect<img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"></a>
+                    <a href="" class="nav__link" id="login">
+                        Login </a>
+                </nav>
+                <button class="nav__btn --sign-start" id="sign-up">Sign Up</button>
+            </section>
+            <section class="action">
+                <h1 class="action__title">A modern publishing platform</h1>
+                <p class="action__paragraph">Grow your audience and build your online brand</p>
+                <button class="action__btn --sign-start">Start for Free</button>
+                <button class="action__btn --learn">Learn More</button>
+            </section>
         </section>
     </header>
 
     <main>
         <section class="first">
-            <div class="first__image--desktop" aria-label="Illustration editor"></div>
-            <div class="first__image--mobile" aria-label="Illustration editor"></div>
-            <h2 class="first__main-title">Designed for the future</h2>
-            <h3 class="first__title">Introducing an extensible editor</h3>
-            <p class="first__paragraph">
-                Bloqr features an exceedingly intuitive interface which Iets you focus
-                on one thing: creating content. The editor supports management of
-                multiple blogs and allows easy manipulation of embeds such as imaqes,
-                videos, and Markdown. Extensibility with plugins and themes provide
-                easy ways to add functionality or change the looks of a blog.
-            </p>
-            <h3 class="first__title">Robust content management</h3>
-            <p class="first__paragraph">
-                Flexible content management enables users to easily move through
-                posts. Increase the usability of your blog by adding customized
-                categories, sections, format, or flow. With this functionality, you're in
-                full control
-            </p>
+            <h2 class="first__title">Designed for the future</h2>
+            <section class="copy">
+                <h3 class="copy__title">Introducing an extensible editor</h3>
+                <p class="copy__paragraph">
+                    Bloqr features an exceedingly intuitive interface which Iets you focus
+                    on one thing: creating content. The editor supports management of
+                    multiple blogs and allows easy manipulation of embeds such as imaqes,
+                    videos, and Markdown. Extensibility with plugins and themes provide
+                    easy ways to add functionality or change the looks of a blog.
+                </p>
+                <h3 class="copy__title">Robust content management</h3>
+                <p class="copy__paragraph">
+                    Flexible content management enables users to easily move through
+                    posts. Increase the usability of your blog by adding customized
+                    categories, sections, format, or flow. With this functionality, you're in
+                    full control.
+                </p>
+            </section>
         </section>
         <section class="second">
-            <img src="./assets/images/illustration-phones.svg"
-                alt="Two phones, one of them displays on the screen the company logo." class="second__image">
-            <h2 class="second__title">State of the Art Infrastructure</h2>
-            <p class="second__paragraph">
-                With reliability and speed in mind, worldwide data centers provide the
-                backbone for ultra-fast connectivity. This ensures your site will load
-                instantly, no matter where your readers are, keeping your site
-                competitive.
-            </p>
+            <div class="gradient--second"></div>
+            <section class="second__background">
+                <img src="./assets/images/illustration-phones.svg"
+                    alt="Two phones, one of them displays on the screen the company logo." class="second__image">
+                <h2 class="second__title">State of the Art Infrastructure</h2>
+                <p class="second__paragraph">
+                    With reliability and speed in mind, worldwide data centers provide the
+                    backbone for ultra-fast connectivity. This ensures your site will load
+                    instantly, no matter where your readers are, keeping your site
+                    competitive.
+                </p>
+            </section>
         </section>
         <section class="third">
-            <div class="third__image--desktop" aria-label="Illustration laptop"></div>
-            <div class="third__image--mobile" aria-label="Illustration laptop"></div>
-            <h3 class="third__title">Free, open, simple</h3>
-            <p class="third__paragraph">
+            <h3 class="copy__title">Free, open, simple</h3>
+            <p class="copy__paragraph">
                 Blogr is a free and open source application backed by a large
                 community of helpful developers. It supports features such as code
                 syntax highlighting, RSS feeds, social media integration, third-party
                 commenting tools, and works seamlessly with Google Analytics. The
                 architecture is clean and is relatively easy to learn,
             </p>
-            <h3 class="third__title">Powerful tooling</h3>
-            <p class="third__paragraph">
+            <h3 class="copy__title">Powerful tooling</h3>
+            <p class="copy__paragraph">
                 Batteries included. We built a simple and straightforward CLI tool that
                 makes customization and deployment a breeze, but capable of
                 producing even the most complicated sites.
@@ -98,28 +107,30 @@
     </main>
 
     <footer>
-        <img src="./assets/images/logo.svg" alt="Logo">
-        <nav class="nav-column">
-            <a href="" class="nav-column --bold">Product</a>
-            <a href="" class="nav-column">Overview</a>
-            <a href="" class="nav-column">Pricing</a>
-            <a href="" class="nav-column">Marketplace</a>
-            <a href="" class="nav-column">Features</a>
-            <a href="" class="nav-column">Integrations</a>
-        </nav>
-        <nav class="nav-column">
-            <a href="" class="nav-column --bold">Company</a>
-            <a href="" class="nav-column">About</a>
-            <a href="" class="nav-column">Team</a>
-            <a href="" class="nav-column">Blog</a>
-            <a href="" class="nav-column">Careers</a>
-        </nav>
-        <nav class="nav-column">
-            <a href="" class="nav-column --bold">Connect</a>
-            <a href="" class="nav-column">Contact</a>
-            <a href="" class="nav-column">Newsletter</a>
-            <a href="" class="nav-column">LinkedIn</a>
-        </nav>
+        <section class="nav-grid">
+        <img src="./assets/images/logo.svg" alt="Logo" class="logo--footer">
+            <nav class="nav-grid__column">
+                <a href="" class="nav-grid__link">Product</a>
+                <a href="" class="nav-grid__link">Overview</a>
+                <a href="" class="nav-grid__link">Pricing</a>
+                <a href="" class="nav-grid__link">Marketplace</a>
+                <a href="" class="nav-grid__link">Features</a>
+                <a href="" class="nav-grid__link">Integrations</a>
+            </nav>
+            <nav class="nav-grid__column">
+                <a href="" class="nav-grid__link">Company</a>
+                <a href="" class="nav-grid__link">About</a>
+                <a href="" class="nav-grid__link">Team</a>
+                <a href="" class="nav-grid__link">Blog</a>
+                <a href="" class="nav-grid__link">Careers</a>
+            </nav>
+            <nav class="nav-grid__column">
+                <a href="" class="nav-grid__link">Connect</a>
+                <a href="" class="nav-grid__link">Contact</a>
+                <a href="" class="nav-grid__link">Newsletter</a>
+                <a href="" class="nav-grid__link">LinkedIn</a>
+            </nav>
+        </section>
     </footer>
 
 </body>
