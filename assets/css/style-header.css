@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+.gradient--header {
+    position: absolute;
+    background-image: linear-gradient(to right, var(--very-light-red-header), var(--light-red-CTA));
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 57.4rem;
+    border-bottom-left-radius: 10rem;
+}
+
+.header__background {
+    position: relative;
+    background-image: url(../../assets/images/bg-pattern-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -432px -1355px;
+    padding: 5.8rem 16rem 15.4rem 16.5rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__link {
+    font-size: var(--size16);
+    font-family: var(--ubuntu);
+    font-weight: var(--w7);
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+.nav__link:first-of-type {
+    margin-left: 6.4rem;
+}
+
+.nav__link:last-of-type {
+    margin-left: 40rem;
+}
+
+.nav__arrow {
+    margin-left: 0.62rem;
+}
+
+.--sign-start {
+    font-family: var(--ubuntu);
+    font-size: var(--size16);
+    font-weight: var(--w7);
+    color: var(--light-red-CTA);
+    background-color: var(--white);
+    width: 13.8rem;
+    height: 4.8rem;
+    border-radius: 2.2rem;
+    border: none;
+}
+
+.action {
+    text-align: center;
+    margin-top: 12.4rem;
+}
+
+.action__title {
+    font-size: 6.4rem;
+    font-weight: var(--w6);
+    color: var(--white);
+    letter-spacing: -0.255rem;
+    margin-bottom: 1.2rem;
+}
+
+.action__paragraph {
+    font-size: var(--size20);
+    font-weight: var(--w3);
+    color: var(--white);
+    margin-bottom: 4.6rem;
+}
+
+.action__btn {
+    letter-spacing: 0.024rem;
+    margin: 0 0.4rem;
+}
+
+.--learn {
+    font-family: var(--ubuntu);
+    font-size: var(--size16);
+    font-weight: var(--w7);
+    color: var(--white);
+    background: none;
+    width: 13.8rem;
+    height: 4.8rem;
+    border-radius: 2.2rem;
+    border: 1px solid var(--white);
+}
