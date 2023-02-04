@@ -30,19 +30,49 @@
     <header>
         <div class="gradient--header"></div>
         <section class="header__background">
-            <section class="nav">
-                <img src="./assets/images/logo.svg" alt="Logo" class="nav__logo">
-                <nav class="nav__bar">
-                    <a href="" class="nav__link">
-                        Product<img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"></a>
-                    <a href="" class="nav__link">
-                        Company<img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"></a>
-                    <a href="" class="nav__link">
-                        Connect<img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"></a>
-                    <a href="" class="nav__link" id="login">
-                        Login </a>
-                </nav>
-                <button class="nav__btn --sign-start" id="sign-up">Sign Up</button>
+            <section class="header__nav">
+                <img src="./assets/images/logo.svg" alt="Logo" class="header__logo">
+                <section class="nav-bar">
+                    <nav class="nav-bar__dropdown">
+                        <div class="dropdown">
+                            <a href="" class="dropdown__link" id="link">Product
+                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow" id="arrow">
+                            </a>
+                            <nav class="dropdown__nav" id="nav">
+                                <a href="" class="nav-dropdown__link">Overview</a>
+                                <a href="" class="nav-dropdown__link">Pricing</a>
+                                <a href="" class="nav-dropdown__link">Marketplace</a>
+                                <a href="" class="nav-dropdown__link">Features</a>
+                                <a href="" class="nav-dropdown__link">Integrations</a>
+                            </nav>
+                        </div>
+                        <div class="dropdown">
+                            <a href="" class="dropdown__link">Company
+                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow">
+                            </a>
+                            <nav class="dropdown__nav">
+                                <a href="" class="nav-dropdown__link">About</a>
+                                <a href="" class="nav-dropdown__link">Team</a>
+                                <a href="" class="nav-dropdown__link">Blog</a>
+                                <a href="" class="nav-dropdown__link">Careers</a>
+                            </nav>
+                        </div>
+                        <div class="dropdown">
+                            <a href="" class="dropdown__link">Connect
+                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow">
+                            </a>
+                            <nav class="dropdown__nav">
+                                <a href="" class="nav-dropdown__link">Contact</a>
+                                <a href="" class="nav-dropdown__link">Newsletter</a>
+                                <a href="" class="nav-dropdown__link">LinkedIn</a>
+                            </nav>
+                        </div>
+                    </nav>
+                    <nav class="nav-bar__buttons">
+                        <button class="nav__btn" id="login">Login</button>
+                        <button class="nav__btn --sign-start" id="sign-up">Sign Up</button>
+                    </nav>
+                </section>
             </section>
             <section class="action">
                 <h1 class="action__title">A modern publishing platform</h1>
@@ -108,7 +138,7 @@
 
     <footer>
         <section class="nav-grid">
-        <img src="./assets/images/logo.svg" alt="Logo" class="logo--footer">
+            <img src="./assets/images/logo.svg" alt="Logo" class="logo--footer">
             <nav class="nav-grid__column">
                 <a href="" class="nav-grid__link">Product</a>
                 <a href="" class="nav-grid__link">Overview</a>
@@ -132,6 +162,8 @@
             </nav>
         </section>
     </footer>
+
+<script src="./assets/js/main.js"></script>
 
 </body>
 
