@@ -41,3 +41,7 @@ footer {
     text-decoration: none;
     margin-bottom: 3.6rem;
 }
+
+.nav-grid__link:hover{
+    text-decoration: underline;
+}

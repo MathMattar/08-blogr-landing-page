@@ -18,14 +18,30 @@
     padding: 5.8rem 16rem 15.4rem 16.5rem;
 }
 
-.nav {
+.header__nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.nav__link {
+.header__logo {
+    margin-right: 6.4rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown__link {
+    display: flex;
+    align-items: center;
     font-size: var(--size16);
     font-family: var(--ubuntu);
     font-weight: var(--w7);
@@ -34,16 +50,68 @@
     margin-right: 3rem;
 }
 
-.nav__link:first-of-type {
-    margin-left: 6.4rem;
+.nav__arrow{
+    margin-left: .8rem;
 }
 
-.nav__link:last-of-type {
-    margin-left: 40rem;
+.dropdown__link:hover {
+    text-decoration: underline;
 }
 
-.nav__arrow {
-    margin-left: 0.62rem;
+.dropdown__nav {
+    position: absolute;
+    display: none;
+    background-color: var(--white);
+    padding: 3.2rem 8.4rem 3.2rem 2.4rem;
+    margin-top: 2.6rem;
+    border-radius: .6rem;
+    z-index: 1;
+}
+
+.nav-dropdown__link {
+    display: block;
+    font-size: var(--size16);
+    font-family: var(--ubuntu);
+    font-weight: var(--w4);
+    color: var(--very-dark-blue);
+    letter-spacing: -.042rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.nav-dropdown__link:last-of-type{
+    margin-bottom: none;
+}
+
+.nav-dropdown__link:hover{
+    font-weight: var(--w7);
+}
+
+.dropdown:hover .dropdown__nav {
+    display: block;
+    transition: 1s;
+}
+
+.dropdown:hover .nav__arrow {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.nav__btn {
+    font-size: var(--size16);
+    font-family: var(--ubuntu);
+    font-weight: var(--w7);
+    color: var(--white);
+    background: none;
+    border: none;
+}
+
+.nav__btn:first-of-type {
+    margin-right: 3rem;
+}
+
+.nav__btn:first-child:hover{
+    text-decoration: underline;
 }
 
 .--sign-start {
@@ -56,6 +124,11 @@
     height: 4.8rem;
     border-radius: 2.2rem;
     border: none;
+}
+
+.--sign-start:hover{
+    color: var(--white);
+    background-color: var(--very-light-red-CTA);
 }
 
 .action {
@@ -93,4 +166,9 @@
     height: 4.8rem;
     border-radius: 2.2rem;
     border: 1px solid var(--white);
+}
+
+.--learn:hover{
+    background-color: var(--white);
+    color: var(--very-light-red-CTA);
 }
