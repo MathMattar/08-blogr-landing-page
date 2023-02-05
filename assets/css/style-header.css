@@ -20,6 +20,7 @@
 
 .header__nav {
     display: flex;
+    align-items: center;
 }
 
 .header__logo {
@@ -95,6 +96,11 @@
 .dropdown:hover .nav__arrow {
     transform: rotate(180deg);
     transition: 0.5s;
+}
+
+.nav__btn a {
+    text-decoration: none;
+    color: unset;
 }
 
 .nav__btn {
