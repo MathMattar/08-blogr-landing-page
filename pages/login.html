@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- title -->
+    <title>Blogr</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/root.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <main class="login__background">
+        <section class="login__background --white">
+
+            <h1 class="login__title">Login</h1>
+
+            <form class="login__form">
+                <fieldset class="form_container">
+                    <label for="email" class="form__label">Email or username</label>
+                    <img src="../assets/images/icon-user.svg" alt="User" class="form__icon --user">
+                    <input type="email" id="email" class="form__input" placeholder="Email address or username" required>
+                </fieldset>
+                <hr class="form__div">
+                <fieldset class="form_container">
+                    <label for="password" class="form__label">Password</label>
+                    <img src="../assets/images/icon-lock.svg" alt="Lock" class="form__icon --lock">
+                    <input type="password" id="password" class="form__input" placeholder="Password" required>
+                </fieldset>
+                <hr class="form__div">
+                <fieldset>
+                    <label for="checkbox" class="form__label">Remeber me</label>
+                    <input type="checkbox" id="checkbox" class="form__checkbox">
+                </fieldset>
+            </form>
+            <a href="" class="login__forgot">Forgot your password?</a>
+            <button type="submit" id="" class="login__button">Login</button>
+            
+            <div class="div-form">
+                <hr class="div-icon-sites">
+                <p class="login__paragraph">OR</p>
+                <hr class="div-icon-sites">
+            </div>
+
+            <section class="login__sites">
+                <img src="../assets/images/icon-facebook.svg" alt="Facebook" id="" class="sites__icon --facebook">
+                <img src="../assets/images/icon-google.svg" alt="Google" id="" class="sites__icon --google">
+                <img src="../assets/images/icon-twitter.svg" alt="Twitter" id="" class="sites__icon --twitter">
+            </section>
+            <a href="" class="login__sign-up">Sign Up</a>
+        </section>
+    </main>
+</body>
+
+</html>
