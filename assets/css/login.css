@@ -10,6 +10,11 @@ body {
     height: 100vh;
 }
 
+.logo {
+    margin-bottom: 2rem;
+    width: 10.6rem;
+}
+
 main {
     background-image: none;
     background-color: var(--white);
