@@ -24,45 +24,59 @@
 </head>
 
 <body>
-    <main class="login__background">
-        <section class="login__background --white">
+    <main>
 
-            <h1 class="login__title">Login</h1>
+        <h1>Login</h1>
 
-            <form class="login__form">
-                <fieldset class="form_container">
-                    <label for="email" class="form__label">Email or username</label>
-                    <img src="../assets/images/icon-user.svg" alt="User" class="form__icon --user">
-                    <input type="email" id="email" class="form__input" placeholder="Email address or username" required>
-                </fieldset>
-                <hr class="form__div">
-                <fieldset class="form_container">
-                    <label for="password" class="form__label">Password</label>
-                    <img src="../assets/images/icon-lock.svg" alt="Lock" class="form__icon --lock">
-                    <input type="password" id="password" class="form__input" placeholder="Password" required>
-                </fieldset>
-                <hr class="form__div">
-                <fieldset>
-                    <label for="checkbox" class="form__label">Remeber me</label>
-                    <input type="checkbox" id="checkbox" class="form__checkbox">
-                </fieldset>
-            </form>
-            <a href="" class="login__forgot">Forgot your password?</a>
-            <button type="submit" id="" class="login__button">Login</button>
-            
-            <div class="div-form">
-                <hr class="div-icon-sites">
-                <p class="login__paragraph">OR</p>
-                <hr class="div-icon-sites">
-            </div>
+        <form>
+            <fieldset class="container">
+                <label for="email" class="container__label">Email or username</label>
+                <div class="container__input-icon">
+                    <img src="../assets/images/icon-user.svg" alt="User" class="container__icon">
+                    <input type="email" id="email" placeholder="Email address or username" class="container__input"
+                        required>
+                </div>
+            </fieldset>
 
-            <section class="login__sites">
-                <img src="../assets/images/icon-facebook.svg" alt="Facebook" id="" class="sites__icon --facebook">
-                <img src="../assets/images/icon-google.svg" alt="Google" id="" class="sites__icon --google">
-                <img src="../assets/images/icon-twitter.svg" alt="Twitter" id="" class="sites__icon --twitter">
-            </section>
-            <a href="" class="login__sign-up">Sign Up</a>
+            <hr>
+
+            <fieldset class="container">
+                <label for="password" class="container__label">Password</label>
+                <div class="container__input-icon">
+                    <img src="../assets/images/icon-lock.svg" alt="Lock" class="container__icon">
+                    <input type="password" id="password" placeholder="Password" class="container__input" required>
+                </div>
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="container--checkbox">
+                <div class="container__label-input">
+                    <label for="checkbox" class="container__label --remember">Remember me</label>
+                    <input type="checkbox" id="checkbox" class="container__input--checkbox">
+                </div>
+                <a href="" class="container__link">Forgot your password?</a>
+            </fieldset>
+
+        </form>
+
+
+        <button type="submit" id="" class="button">Login</button>
+
+        <div class="divider">
+            <hr class="divider__line">
+            <p class="divider__text">OR</p>
+            <hr class="divider__line">
+        </div>
+
+        <section class="social">
+            <img src="../assets/images/icon-facebook.svg" alt="Facebook" id="facebook" class="social__icons">
+            <img src="../assets/images/icon-google.svg" alt="Google" id="google" class="social__icons">
+            <img src="../assets/images/icon-twitter.svg" alt="Twitter" id="twitter" class="social__icons">
         </section>
+
+        <a href="./signup.html" class="sign-up">Sign Up</a>
+
     </main>
 </body>
 
