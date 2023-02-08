@@ -15,10 +15,8 @@
     <title>Blogr</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/style-header.css">
-    <link rel="stylesheet" href="./assets/css/style-main.css">
-    <link rel="stylesheet" href="./assets/css/style-footer.css">
+    <link rel="stylesheet" href="../assets/css/root.css">
+    <link rel="stylesheet" href="../assets/css/signup.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
@@ -26,14 +24,63 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
     <main>
+        <a href="../index.html"><img src="../assets/images/logo-blue.svg" alt="Logo" class="logo"></a>
 
+        <h1>Create account</h1>
+
+        <form class="register">
+            <fieldset class="container">
+                <label for="name" class="container__label">Name</label>
+                <div class="container__input-icon">
+                    <img src="../assets/images/icon-user.svg" alt="Icon User" class="container__icon">
+                    <input type="text" placeholder="Full name" id="name" class="container__input" required>
+                </div>
+                <hr>
+            </fieldset>
+
+            <fieldset class="container">
+                <label for="email" class="container__label">Email</label>
+                <div class="container__input-icon">
+                    <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="container__icon">
+                    <input type="text" placeholder="Email address" id="email" class="container__input" required>
+                </div>
+                <hr>
+            </fieldset>
+
+            <fieldset class="container">
+                <label for="password" class="container__label">Password</label>
+                <div class="container__input-icon">
+                    <img src="../assets/images/icon-lock.svg" alt="Icon Lock" class="container__icon">
+                    <input type="text" placeholder="Password" id="password" class="container__input" required>
+                </div>
+                <hr>
+            </fieldset>
+
+        </form>
+
+        <button type="submit" id="sign-up" class="button">Sign Up</button>
+        <p class="lead">Already have an account?</p>
+        <a href="./login.html" class="login">Login</a>
     </main>
-    <footer>
+    <aside>
+        <section class="slide --one">
+            <img src="../assets/images/illustration-editor-slide.svg" alt="" class="slide__image">
+            <div class="text">
+                <h2>Introducing an extensible editor</h2>
+                <p class="copy">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
+                    creating content. Extensibility with plugins and themes provide easy ways
+                    to add functionality or change the looks of a blog.</p>
+            </div>
+        </section>
 
-    </footer>
+        <!-- <section class="slide --two">
+            <img src="../assets/images/illustration-laptop-slide.svg" alt="">
+            <h2>Free, open, simple</h2>
+            <p>Blogr is a free and open source application backed by a large
+                community of helpful developers. </p>
+        </section> -->
+    </aside>
 </body>
+
 </html>
