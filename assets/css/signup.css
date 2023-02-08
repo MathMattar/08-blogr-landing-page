@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+html {
+    font-family: var(--ubuntu);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--white);
+    width: 50vw;
+    padding: 5rem;
+}
+
+.logo {
+    margin-bottom: 5rem;
+}
+
+h1 {
+    display: block;
+    font-size: var(--size40);
+    font-weight: var(--w7);
+    color: var(--very-dark-blue);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.register {
+    padding: 0 5rem;
+}
+
+.container__label {
+    font-size: var(--size20);
+    font-weight: var(--w7);
+    color: var(--very-dark-blue);
+}
+
+.container__input-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.6rem 0 .8rem;
+
+}
+
+.container__icon {
+    width: 1.6rem;
+    margin: .8rem;
+}
+
+.container__input {
+    font-size: var(--size16);
+    font-weight: var(--w5);
+    color: var(--very-dark-blue);
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+}
+
+.container__input::placeholder {
+    color: var(--grayish-blue);
+}
+
+hr {
+    width: 100%;
+    border: .05rem solid var(--very-dark-grayish-blue);
+    margin: 0 0 3rem;
+}
+
+.button {
+    display: block;
+    font-size: var(--size20);
+    font-weight: var(--w7);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+    width: 28rem;
+    height: 5rem;
+    background-image: linear-gradient(to left, var(--very-dark-desaturated-blue) 70%, var(--very-dark-gray-blue));
+    border: none;
+    border-radius: 2rem;
+    margin: 3rem auto;
+    cursor: pointer;
+}
+
+.lead {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: var(--w4);
+    color: var(--very-dark-blue);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.login {
+    display: block;
+    font-size: var(--size20);
+    font-weight: var(--w7);
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.16rem;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    padding: 5rem;
+}
+
+.--one {
+    background-image: linear-gradient(60deg, var(--very-light-red-header), var(--light-red-CTA));
+}
+
+.slide__image{
+    width: 60rem;
+    margin: 0 0 5rem;
+}
+
+h2 {
+    font-family: var(--overpass);
+    display: block;
+    font-size: var(--size28);
+    font-weight: var(--w5);
+    color: var(--white);
+    letter-spacing: -0.0165rem;
+    text-align: center;
+    margin: 0 0 3rem;
+}
+
+.copy {
+    font-family: var(--overpass);
+    display: block;
+    font-size: var(--size16);
+    font-weight: var(--w5);
+    color: var(--white);
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: ;
+}
+
+
+.--two {
+    display: none;
+}
