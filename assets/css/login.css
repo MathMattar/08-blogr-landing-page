@@ -7,7 +7,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-image: linear-gradient(60deg, var(--very-light-red-header), var(--light-red-CTA));
     width: 100vw;
@@ -15,8 +15,7 @@ body {
 }
 
 .logo {
-    margin-bottom: 2rem;
-    width: 10.6rem;
+    margin: 5.8rem auto 2rem;
 }
 
 main {
@@ -24,9 +23,9 @@ main {
     background-color: var(--white);
     border-radius: 2rem;
     box-shadow: 0 0 .4rem .4rem rgba(0, 0, 0, .25);
-    padding: 6rem 4rem;
-    width: 40rem;
-    height: 54rem;
+    padding: 5rem;
+    width: 48rem;
+    height: 62.4rem;
 }
 
 h1 {
@@ -34,7 +33,7 @@ h1 {
     font-weight: var(--w5);
     color: var(--very-dark-blue);
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 form {
@@ -52,24 +51,21 @@ form {
 
 .container__input-icon {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin: .6rem 1.2rem;
 }
 
 .container__icon {
     width: 1.6rem;
     opacity: .5;
-    padding-left: 1.2rem;
 }
 
 .container__input {
     font-size: var(--size16);
     font-weight: var(--w4);
     color: var(--very-dark-blue);
-    width: 36rem;
+    width: 100%;
     height: 2.8rem;
-    padding-left: .6rem;
-    margin: .8rem 0;
+    padding-left: .8rem;
     border: none;
 }
 
@@ -80,7 +76,7 @@ form {
 hr {
     width: 100%;
     border: .05rem solid var(--very-dark-grayish-blue);
-    margin-bottom: 2rem;
+    margin: 0 0 2.4rem;
 }
 
 .container--checkbox {
@@ -124,12 +120,12 @@ hr {
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.16rem;
-    width: 20rem;
+    width: 100%;
     height: 5rem;
     background-image: linear-gradient(to left, var(--very-dark-desaturated-blue) 70%, var(--very-dark-gray-blue));
     border: none;
     border-radius: 2rem;
-    margin: 2.6rem auto;
+    margin: 2.4rem 0;
     cursor: pointer;
 }
 
@@ -140,7 +136,7 @@ hr {
 }
 
 .divider__line {
-    width: 18rem;
+    width: 16.8rem;
     margin: unset;
 }
 
@@ -159,7 +155,7 @@ hr {
 
 .social__icons {
     width: 4rem;
-    margin: 2rem 1.4rem;
+    margin: 1.6rem;
     cursor: pointer;
 }
 
@@ -172,7 +168,7 @@ hr {
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.16rem;
-    margin: 2rem 0;
+    margin: 1.6rem 0 0;
 }
 
 .sign-up:hover{

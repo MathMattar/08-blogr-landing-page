@@ -13,7 +13,7 @@ body {
 
 main {
     background-color: var(--white);
-    width: 50vw;
+    width: 50%;
     padding: 5rem;
 }
 
@@ -79,12 +79,12 @@ hr {
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.16rem;
-    width: 28rem;
+    width: 30rem;
     height: 5rem;
     background-image: linear-gradient(to left, var(--very-dark-desaturated-blue) 70%, var(--very-dark-gray-blue));
     border: none;
     border-radius: 2rem;
-    margin: 3rem auto;
+    margin: 2rem auto 3rem;
     cursor: pointer;
 }
 
@@ -108,32 +108,37 @@ hr {
     letter-spacing: 0.16rem;
 }
 
+aside {
+    width: 50%;
+}
+
 .slide {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 100%;
     height: 100vh;
     padding: 5rem;
 }
 
 .--one {
-    background-image: linear-gradient(60deg, var(--very-light-red-header), var(--light-red-CTA));
+    background-image: linear-gradient(60deg, var(--very-light-red-header) 45%, var(--light-red-CTA));
+
 }
 
-.slide__image{
-    width: 60rem;
-    margin: 0 0 5rem;
+.slide__image {
+    height: 42.4rem;
+    margin: 5rem auto;
 }
 
 h2 {
     font-family: var(--overpass);
     display: block;
-    font-size: var(--size28);
-    font-weight: var(--w5);
+    font-size: var(--size40);
+    font-weight: var(--w7);
     color: var(--white);
     letter-spacing: -0.0165rem;
     text-align: center;
-    margin: 0 0 3rem;
+    margin: 0 0 4rem;
 }
 
 .copy {
@@ -143,11 +148,11 @@ h2 {
     font-weight: var(--w5);
     color: var(--white);
     letter-spacing: 0.05rem;
+    line-height: 1.5;
     text-align: center;
-    margin: ;
 }
 
-
 .--two {
-    display: none;
+    display: block;
+    background-image: linear-gradient(60deg, var(--very-dark-desaturated-blue) 60%, var(--very-dark-gray-blue));
 }
