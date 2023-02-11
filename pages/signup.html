@@ -63,15 +63,13 @@
         <p class="lead">Already have an account?</p>
         <a href="./login.html" class="login">Login</a>
     </main>
-    <aside>
-        <section class="slide --one">
+    <aside class="slider">
+        <section class="slide --one active">
             <img src="../assets/images/illustration-editor-slide.svg" alt="" class="slide__image">
-            <div class="text">
                 <h2>Introducing an extensible editor</h2>
                 <p class="copy">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
                     creating content. Extensibility with plugins and themes provide easy ways
                     to add functionality or change the looks of a blog.</p>
-            </div>
         </section>
 
         <section class="slide --two">
@@ -82,7 +80,16 @@
                 syntax highlighting, RSS feeds, social media integration, third-party
                 commenting tools, and works seamlessly with Google Analytics</p>
         </section>
+
+        <div class="slide-nav">
+            <button id="prevBtn" class="dot">•</button>
+            <button id="nextBtn" class="dot">○</button>
+          </div>
+
     </aside>
+
+    <script src="../assets/js/slide.js"></script>
+
 </body>
 
 </html>
