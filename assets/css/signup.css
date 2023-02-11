@@ -108,24 +108,38 @@ hr {
     letter-spacing: 0.16rem;
 }
 
-aside {
+.slider {
     width: 50%;
+    overflow: hidden;
+    position: relative;
 }
 
 .slide {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s ease-in-out;
     padding: 5rem;
 }
 
 .--one {
     background-image: linear-gradient(60deg, var(--very-light-red-header) 45%, var(--light-red-CTA));
+}
 
+.--two {
+    background-image: linear-gradient(60deg, var(--very-dark-desaturated-blue) 60%, var(--very-dark-gray-blue));
+}
+
+.active {
+    display: block;
+    opacity: 1;
 }
 
 .slide__image {
+    display: block;
     height: 42.4rem;
     margin: 5rem auto;
 }
@@ -152,7 +166,28 @@ h2 {
     text-align: center;
 }
 
-.--two {
-    display: block;
-    background-image: linear-gradient(60deg, var(--very-dark-desaturated-blue) 60%, var(--very-dark-gray-blue));
+.slide-nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+.slide-nav__button {
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+}
+
+.dot {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: var(--white);
+}
+
+.dot.active {
+    font-size: 2.6rem;
+    color: var(--white);
 }

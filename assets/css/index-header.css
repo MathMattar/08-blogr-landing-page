@@ -67,6 +67,7 @@
     margin-top: 2.6rem;
     border-radius: .6rem;
     z-index: 1;
+    cursor: pointer;
 }
 
 .nav-dropdown__link {
@@ -84,11 +85,11 @@
     margin-bottom: none;
 }
 
-.nav-dropdown__link:hover{
+ .nav-dropdown__link:hover{
     font-weight: var(--w7);
 }
 
-.dropdown:hover .dropdown__nav {
+/* .dropdown:hover .dropdown__nav {
     display: block;
     transition: 1s;
 }
@@ -96,8 +97,8 @@
 .dropdown:hover .nav__arrow {
     transform: rotate(180deg);
     transition: 0.5s;
-}
-
+} */
+ 
 .nav__btn a {
     text-decoration: none;
     color: unset;
