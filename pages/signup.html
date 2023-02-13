@@ -33,8 +33,9 @@
             <fieldset class="container">
                 <label for="name" class="container__label">Name</label>
                 <div class="container__input-icon">
+                    <span class="error-message"></span>
                     <img src="../assets/images/icon-user.svg" alt="Icon User" class="container__icon">
-                    <input type="text" placeholder="Full name" id="name" class="container__input" required>
+                    <input type="text" id="name" class="container__input" name="name" placeholder="Full name" required>
                 </div>
                 <hr>
             </fieldset>
@@ -42,8 +43,10 @@
             <fieldset class="container">
                 <label for="email" class="container__label">Email</label>
                 <div class="container__input-icon">
+                    <span class="error-message"></span>
                     <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="container__icon">
-                    <input type="text" placeholder="Email address" id="email" class="container__input" required>
+                    <input type="email" id="email" class="container__input" name="email" placeholder="Email address"
+                        minlength="3" required>
                 </div>
                 <hr>
             </fieldset>
@@ -51,8 +54,14 @@
             <fieldset class="container">
                 <label for="password" class="container__label">Password</label>
                 <div class="container__input-icon">
+                    <span class="error-message"></span>
                     <img src="../assets/images/icon-lock.svg" alt="Icon Lock" class="container__icon">
-                    <input type="text" placeholder="Password" id="password" class="container__input" required>
+                    <input type="password" id="password" class="container__input" name="password" placeholder="Password"
+                        minlength="8" maxlength="20" pattern="" required>
+                    <button id="eye--on" class="button-eye --on" type="button"><img src="../assets/images/icon-eye.svg"
+                            alt="eye" class="eye"></button>
+                    <button id="eye--off" class="button-eye --off" type="button"><img
+                            src="../assets/images/icon-eye-off.svg" alt="eye" class="eye"></button>
                 </div>
                 <hr>
             </fieldset>
@@ -66,10 +75,10 @@
     <aside class="slider">
         <section class="slide --one active">
             <img src="../assets/images/illustration-editor-slide.svg" alt="" class="slide__image">
-                <h2>Introducing an extensible editor</h2>
-                <p class="copy">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
-                    creating content. Extensibility with plugins and themes provide easy ways
-                    to add functionality or change the looks of a blog.</p>
+            <h2>Introducing an extensible editor</h2>
+            <p class="copy">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
+                creating content. Extensibility with plugins and themes provide easy ways
+                to add functionality or change the looks of a blog.</p>
         </section>
 
         <section class="slide --two">
@@ -84,12 +93,12 @@
         <div class="slide-nav">
             <button id="prevBtn" class="dot">•</button>
             <button id="nextBtn" class="dot">○</button>
-          </div>
+        </div>
 
     </aside>
-
+    <script src="../assets/js/validacaoSignUp.js" type="module"></script>
     <script src="../assets/js/slide.js"></script>
-
+    <script src="../assets/js/password.js"></script>
 </body>
 
 </html>

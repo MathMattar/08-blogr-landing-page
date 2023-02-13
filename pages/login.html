@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../assets/css/login.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href=".././assets/images/favicon-32x32.png" type="image/x-icon">
 
 </head>
 
@@ -34,17 +34,24 @@
             <fieldset class="container">
                 <label for="email" class="container__label">Email or username</label>
                 <div class="container__input-icon">
+                    <span class="error-message"></span>
                     <img src="../assets/images/icon-user.svg" alt="User" class="container__icon">
-                    <input type="email" id="email" placeholder="Email address or username" class="container__input"
-                        required>
+                    <input type="email" id="email" class="container__input" name="email"
+                        placeholder="Email address or username" minlength="3" required>
                 </div>
                 <hr>
             </fieldset>
             <fieldset class="container">
                 <label for="password" class="container__label">Password</label>
                 <div class="container__input-icon">
+                    <span class="error-message"></span>
                     <img src="../assets/images/icon-lock.svg" alt="Lock" class="container__icon">
-                    <input type="password" id="password" placeholder="Password" class="container__input" required>
+                    <input type="password" id="password" class="container__input" name="password" placeholder="Password"
+                        minlength="10" maxlength="20" required pattern="">
+                    <button id="eye--on" class="button-eye --on" type="button"><img src="../assets/images/icon-eye.svg"
+                            alt="eye" class="eye"></button>
+                    <button id="eye--off" class="button-eye --off" type="button"><img
+                            src="../assets/images/icon-eye-off.svg" alt="eye" class="eye"></button>
                 </div>
                 <hr>
             </fieldset>
@@ -76,6 +83,10 @@
         <a href="./signup.html" class="sign-up">Sign Up</a>
 
     </main>
+
+    <script src="../assets/js/validacaoLogin.js" type="module"></script>
+    <script src="../assets/js/password.js"></script>
+
 </body>
 
 </html>
