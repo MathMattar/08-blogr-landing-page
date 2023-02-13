@@ -7,7 +7,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     background-image: linear-gradient(60deg, var(--very-light-red-header), var(--light-red-CTA));
     width: 100vw;
@@ -25,7 +24,7 @@ main {
     box-shadow: 0 0 .4rem .4rem rgba(0, 0, 0, .25);
     padding: 5rem;
     width: 48rem;
-    height: 62.4rem;
+    height: 66rem;
 }
 
 h1 {
@@ -50,27 +49,67 @@ form {
 }
 
 .container__input-icon {
-    display: flex;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: .4rem .8rem;
     margin: .6rem 1.2rem;
 }
 
+.error-message {
+    grid-column: 1/3;
+    grid-row: 1;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--light-red-CTA);
+}
+
 .container__icon {
-    width: 1.6rem;
+    grid-column: 1/2;
+    grid-row: 2;
+    height: 1.6rem;
     opacity: .5;
 }
 
 .container__input {
+    grid-column: 2/3;
+    grid-row: 2;
     font-size: var(--size16);
-    font-weight: var(--w4);
+    font-weight: var(--w5);
     color: var(--very-dark-blue);
     width: 100%;
     height: 2.8rem;
-    padding-left: .8rem;
     border: none;
+}
+
+.container__input:focus {
+    outline: none;
 }
 
 .container__input::placeholder {
     color: var(--grayish-blue);
+}
+
+.button-eye {
+    grid-column: 2/3;
+    grid-row: 2;
+    justify-self: end;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.eye {
+    height: 1.8rem;
+}
+
+.--on {
+    display: none;
+}
+
+.--off {
+    display: block;
 }
 
 hr {
@@ -159,10 +198,10 @@ hr {
     cursor: pointer;
 }
 
-.sign-up{
+.sign-up {
     display: block;
     font-size: var(--size20);
-    font-weight: var(--w5);
+    font-weight: var(--w7);
     color: var(--very-dark-blue);
     text-transform: uppercase;
     text-decoration: none;
@@ -171,7 +210,6 @@ hr {
     margin: 1.6rem 0 0;
 }
 
-.sign-up:hover{
+.sign-up:hover {
     text-decoration: underline;
-    font-weight: var(--w7);
 }
