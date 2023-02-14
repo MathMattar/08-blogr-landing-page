@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/index-header.css">
     <link rel="stylesheet" href="./assets/css/index-main.css">
     <link rel="stylesheet" href="./assets/css/index-footer.css">
+    <link rel="stylesheet" href="./assets/css/responsivo-index.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
@@ -28,11 +29,20 @@
 <body>
     <header>
         <div class="gradient--header"></div>
+
         <section class="header__background">
+
             <section class="header__nav">
+
                 <img src="./assets/images/logo.svg" alt="Logo" class="header__logo">
+
                 <section class="nav-bar">
-                    <nav class="nav-bar__dropdown">
+
+                    <button class="nav-bar__sandwich" aria-expanded="false" aria-controls="nav-bar__menu">
+                        <img src="./assets/images/icon-hamburger.svg" alt="Button menu" class="nav-bar__icon-sandwich">
+                    </button>
+                    
+                    <nav class="nav-bar__menu">
                         <div class="dropdown">
                             <a href="" class="dropdown__link" id="link">Product
                                 <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"
@@ -86,6 +96,8 @@
     <main>
         <section class="first">
             <h2 class="first__title">Designed for the future</h2>
+            <img src="./assets/images/illustration-editor-mobile.svg" alt="Illustration display"
+                class="first__image-mobile">
             <section class="copy">
                 <h3 class="copy__title">Introducing an extensible editor</h3>
                 <p class="copy__paragraph">
@@ -119,6 +131,8 @@
             </section>
         </section>
         <section class="third">
+            <img src="./assets/images/illustration-laptop-mobile.svg" alt="Laptop" class="thrid__image-mobile">
+
             <h3 class="copy__title">Free, open, simple</h3>
             <p class="copy__paragraph">
                 Blogr is a free and open source application backed by a large
@@ -136,8 +150,8 @@
         </section>
     </main>
     <footer>
+        <img src="./assets/images/logo.svg" alt="Logo" class="logo--footer">
         <section class="nav-grid">
-            <img src="./assets/images/logo.svg" alt="Logo" class="logo--footer">
             <nav class="nav-grid__column">
                 <a href="" class="nav-grid__link">Product</a>
                 <a href="" class="nav-grid__link">Overview</a>

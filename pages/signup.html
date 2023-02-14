@@ -32,37 +32,31 @@
         <form class="register" data-form>
             <fieldset class="container">
                 <label for="name" class="container__label">Name</label>
-                <div class="container__input-icon">
-                    <span class="error-message"></span>
-                    <img src="../assets/images/icon-user.svg" alt="Icon User" class="container__icon">
-                    <input type="text" id="name" class="container__input" name="name" placeholder="Full name" required>
-                </div>
+                <span class="error-message"></span>
+                <img src="../assets/images/icon-user.svg" alt="Icon User" class="container__icon">
+                <input type="text" id="name" class="container__input" name="name" placeholder="Full name" required>
                 <hr>
             </fieldset>
 
             <fieldset class="container">
                 <label for="email" class="container__label">Email</label>
-                <div class="container__input-icon">
-                    <span class="error-message"></span>
-                    <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="container__icon">
-                    <input type="email" id="email" class="container__input" name="email" placeholder="Email address"
-                        minlength="3" required>
-                </div>
+                <span class="error-message"></span>
+                <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="container__icon">
+                <input type="email" id="email" class="container__input" name="email" placeholder="Email address" minlength="3" required>
                 <hr>
             </fieldset>
 
             <fieldset class="container">
                 <label for="password" class="container__label">Password</label>
-                <div class="container__input-icon">
-                    <span class="error-message"></span>
-                    <img src="../assets/images/icon-lock.svg" alt="Icon Lock" class="container__icon">
-                    <input type="password" id="password" class="container__input" name="password" placeholder="Password"
-                        minlength="8" maxlength="20" pattern="" required>
-                    <button id="eye--on" class="button-eye --on" type="button"><img src="../assets/images/icon-eye.svg"
-                            alt="eye" class="eye"></button>
-                    <button id="eye--off" class="button-eye --off" type="button"><img
-                            src="../assets/images/icon-eye-off.svg" alt="eye" class="eye"></button>
-                </div>
+                <span class="error-message"></span>
+                <img src="../assets/images/icon-lock.svg" alt="Icon Lock" class="container__icon">
+                <input type="password" id="password" class="container__input" name="password" placeholder="Password" minlength="8" maxlength="20" pattern="" required>
+                <button id="eye--on" class="button-eye --on" type="button">
+                    <img src="../assets/images/icon-eye.svg" alt="eye" class="eye">
+                    </button>
+                <button id="eye--off" class="button-eye --off" type="button">
+                    <img src="../assets/images/icon-eye-off.svg" alt="eye" class="eye">
+                </button>
                 <hr>
             </fieldset>
 
@@ -72,6 +66,7 @@
         <p class="lead">Already have an account?</p>
         <a href="./login.html" class="login">Login</a>
     </main>
+
     <aside class="slider">
         <section class="slide --one active">
             <img src="../assets/images/illustration-editor-slide.svg" alt="" class="slide__image">
@@ -91,14 +86,16 @@
         </section>
 
         <div class="slide-nav">
-            <button id="prevBtn" class="dot">•</button>
-            <button id="nextBtn" class="dot">○</button>
+            <button id="prevBtn" class="slide-nav__btn" ><span class="slide-nav__dot">⬤</span></button>
+            <button id="nextBtn" class="slide-nav__btn" ><span class="slide-nav__dot">🞅</span></button>
         </div>
 
     </aside>
+
     <script src="../assets/js/validacaoSignUp.js" type="module"></script>
     <script src="../assets/js/slide.js"></script>
     <script src="../assets/js/password.js"></script>
+
 </body>
 
 </html>
