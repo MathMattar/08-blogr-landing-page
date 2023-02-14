@@ -32,11 +32,19 @@
     --w7: 700;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: var(--overpass);
     font-size: 62.5%;
 }
 
-* {
-    box-sizing: border-box;
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
 }

@@ -15,6 +15,7 @@
     background-image: url(../../assets/images/bg-pattern-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position: -432px -1355px;
+    width: 100vw;
     padding: 5.8rem 16rem 15.4rem 16.5rem;
 }
 
@@ -33,6 +34,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.nav-bar__sandwich{
+    display: none;
+    background-color: transparent;
+    border: none;
 }
 
 .dropdown {

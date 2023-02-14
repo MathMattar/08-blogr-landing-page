@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
 footer {
+    display: flex;
     background-color: var(--very-dark-black-blue);
     border-top-right-radius: 10rem;
     padding: 7rem 21rem 7.8rem;
-}
-
-.nav-grid{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100vw;
 }
 
 .logo--footer{
     width: 10.1rem;
     height: 4rem;
+    margin-right: 18.4rem;
+}
+
+.nav-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10rem;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .nav-grid__column {
