@@ -30,31 +30,29 @@
     <main>
         <h1>Login</h1>
 
-        <form>
+        <form data-form>
             <fieldset class="container">
                 <label for="email" class="container__label">Email or username</label>
-                <div class="container__input-icon">
-                    <span class="error-message"></span>
-                    <img src="../assets/images/icon-user.svg" alt="User" class="container__icon">
-                    <input type="email" id="email" class="container__input" name="email"
-                        placeholder="Email address or username" minlength="3" required>
-                </div>
+                <span class="error-message"></span>
+                <img src="../assets/images/icon-user.svg" alt="User" class="container__icon">
+                <input type="email" id="email" class="container__input" name="email"
+                    placeholder="Email address or username" minlength="3" required>
                 <hr>
             </fieldset>
+
             <fieldset class="container">
                 <label for="password" class="container__label">Password</label>
-                <div class="container__input-icon">
-                    <span class="error-message"></span>
-                    <img src="../assets/images/icon-lock.svg" alt="Lock" class="container__icon">
-                    <input type="password" id="password" class="container__input" name="password" placeholder="Password"
-                        minlength="10" maxlength="20" required pattern="">
-                    <button id="eye--on" class="button-eye --on" type="button"><img src="../assets/images/icon-eye.svg"
-                            alt="eye" class="eye"></button>
-                    <button id="eye--off" class="button-eye --off" type="button"><img
-                            src="../assets/images/icon-eye-off.svg" alt="eye" class="eye"></button>
-                </div>
+                <span class="error-message"></span>
+                <img src="../assets/images/icon-lock.svg" alt="Lock" class="container__icon">
+                <input type="password" id="password" class="container__input" name="password" placeholder="Password"
+                    minlength="10" maxlength="20" required pattern="">
+                <button id="eye--on" class="button-eye --on" type="button"><img src="../assets/images/icon-eye.svg"
+                        alt="eye" class="eye"></button>
+                <button id="eye--off" class="button-eye --off" type="button"><img
+                        src="../assets/images/icon-eye-off.svg" alt="eye" class="eye"></button>
                 <hr>
             </fieldset>
+
             <fieldset class="container--checkbox">
                 <div class="container__label-input">
                     <label for="checkbox" class="container__label --remember">Remember me</label>
@@ -63,10 +61,8 @@
                 <a href="" class="container__link">Forgot your password?</a>
             </fieldset>
 
+            <button type="submit" id="login" class="button">Login</button>
         </form>
-
-
-        <button type="submit" id="login" class="button">Login</button>
 
         <div class="divider">
             <hr class="divider__line">
