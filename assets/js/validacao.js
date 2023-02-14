@@ -20,29 +20,26 @@ export default function checkInputs(input) {
 const errorTypes = [
   "valueMissing",
   "typeMismatch",
-  "patternMismatch",
+  // "patternMismatch",
   "tooShort",
-  "tooLong",
+  // "tooLong",
+  // "customError"
 ];
 
 const messages = {
   name: {
     valueMissing: "The name field cannot be empty",
-    patternMismatch: "Please fill in a valid name address",
     tooShort: "Please fill in a valid name address",
   },
   email: {
     valueMissing: "The email field cannot be empty",
-    patternMismatch: "Please fill in a valid email address",
     tooShort: "Please fill in a valid email address",
   },
   password: {
     valueMissing: "The password field cannot be empty",
-    // patternMismatch:
-    //   "The password must contain at least 8 characters, including upper and lower case letters, numbers, and special characters",
+    // patternMismatch: "The password must contain at least 8 characters, including upper and lower case letters, numbers, and special characters",
     tooShort: "The password must be at least 10 characters long",
     tooLong: "The password must be no longer than 20 characters",
-    customError:
-      "The password must contain at least one special character (!, @, #, $, %, &, *, -, _, =, +, ?)",
+    // customError: "The password must contain at least one special character (!, @, #, $, %, &, *, -, _, =, +, ?)",
   },
 };

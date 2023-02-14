@@ -6,3 +6,17 @@ inputs.forEach((input) => {
   input.addEventListener("blur", () => checkInputs(input));
   input.addEventListener("invalid", (e) => e.preventDefault());
 });
+
+const form = document.querySelector("[data-form]");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const answers = {
+    name: e.target["name"].value,
+    email: e.target["email"].value,
+    password: e.target["password"].value,
+  };
+
+  localStorage.setItem("Login", JSON.stringify(answers));
+});
