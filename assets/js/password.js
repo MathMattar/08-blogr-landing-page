@@ -2,22 +2,18 @@ const on = document.getElementById("eye--on");
 const off = document.getElementById("eye--off");
 const password = document.getElementById("password");
 
-off.addEventListener("click", (e) => {
-  on.style.display = "block";
-  off.style.display = "none";
-  showPassword();
-});
+off.addEventListener("click", togglePassword);
+on.addEventListener("click", togglePassword);
 
-on.addEventListener("click", (e) => {
-  on.style.display = "none";
-  off.style.display = "block";
-  hidePassword();
-});
+function togglePassword() {
 
-function showPassword() {
-  password.setAttribute("type", "text");
-}
+  //Altera a exibição dos botões, alternando os valores diretamente
+  on.style.display = off.style.display;
+  off.style.display = on.style.display;
 
-function hidePassword() {
-  password.setAttribute("type", "password");
+  //Operador ternário responsável por verificar e definir o tipo atual do input e alterar entre "password" e "text"
+  password.setAttribute(
+    "type",
+    password.getAttribute("type") === "password" ? "text" : "password"
+  );
 }

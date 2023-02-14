@@ -1,22 +1,23 @@
 const dropdowns = document.querySelectorAll(".dropdown");
 
-//loop para percorrer todas as opções do dropdown
+//Loop para percorrer todas as opções do dropdown
 dropdowns.forEach((dropdown) => {
   const dropdownNav = dropdown.querySelector(".dropdown__nav");
   const navArrow = dropdown.querySelector(".nav__arrow");
 
   let timeoutId;
 
+  //Funções responsáveis por exibir e ocultar dropdown e rotação da seta
   const displayDropdown = () => {
     dropdownNav.style.display = "block";
     navArrow.style.transform = "rotate(180deg)";
-    navArrow.style.transition = ".5s"
+    navArrow.style.transition = ".5s";
   };
 
   const hideDropdown = () => {
     dropdownNav.style.display = "none";
     navArrow.style.transform = "rotate(0)";
-    navArrow.style.transition = ".5s"
+    navArrow.style.transition = ".5s";
   };
 
   //Evento para manter o dropdown exposto em diferentes ocasiões
