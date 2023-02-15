@@ -1,0 +1,202 @@
+@import '../abstract/root';
+
+
+//---------------------Mixins
+
+// Gradientes
+@mixin gradient ($position, $color-one, $color-two) {
+    background-image: linear-gradient($position, $color-one, $color-two);
+}
+
+// Botão menu
+
+@mixin button-menu ($width, $height, $gradient, $border, $border-radius) {
+    width: $width;
+    height: $height;
+    background-image: linear-gradient($gradient);
+    border: $border;
+    border-radius: $border-radius;
+}
+
+// Botões action
+@mixin button-action ($family, $size, $weight, $letter, $color, $background-color, $border, $border-radius, $width, $height) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter;
+    color: $color;
+    background-color: $background-color;
+    border: $border;
+    border-radius: $border-radius;
+    width: $width;
+    height: $height;
+}
+
+// Textos
+@mixin text($family, $size, $weight, $letter, $line, $color, $align) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter;
+    line-height: $line;
+    color: $color;
+    text-align: $align;
+}
+
+
+//---------------------Inicio estilos
+.header__gradient {
+    @include gradient(to bottom, $gradient-very-light-red, $gradient-light-red);
+    width: 100vw;
+    height: 60rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 10rem;
+}
+
+.header__background {
+    position: relative;
+    background-image: url(../images/bg-pattern-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: -35rem -26rem;
+    width: 100vw;
+    padding: 5.6rem 2.4rem 15.5rem;
+
+    .header__nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .header__logo {
+            grid-area: 1/1;
+            width: 8.2rem;
+        }
+
+        .header__button-hamburguer {
+
+            background-color: transparent;
+            border: none;
+
+            .header__icon-hamburguer {
+                width: 3.2rem;
+            }
+
+            .--close {
+                display: none;
+            }
+        }
+
+        .nav-bar {
+            // display: flex;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: $neutral-white;
+            width: 32.4rem;
+            border-radius: .6rem;
+            padding: 3.2rem 2.4rem;
+            margin-top: 3.6rem;
+            
+
+            .menu-dropdown {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .dropdown__container {
+
+                    width: 100%;
+
+                    .dropdown__link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include text ($overpass, 1.8rem, $o-w6, normal, normal, $neutral-very-dark-black-blue, center);
+                        text-decoration: none;
+                        margin-bottom: 3rem;
+
+                        .dropdown__icon {
+                            display: none;
+                        }
+
+                        .dropdown__icon--dark {
+                            margin-left: .7rem;
+                        }
+                    }
+
+                    .dropdown__list {
+
+                        background-color: $neutral-grayish-blue;
+                        margin-bottom: 2.5rem;
+                        border-radius: .6rem;
+                        padding: 1rem;
+                        width: 100%;
+                        display: none;
+
+                        .dropdown__item {
+                            @include text ($overpass, $size16, $o-w6, normal, normal, $neutral-very-dark-grayish-blue, center);
+                            text-decoration: none;
+                            display: block;
+                            margin: 1rem 0 1rem;
+                        }
+                    }
+                }
+            }
+
+            hr {
+                width: 100%;
+                margin: 0 0 3.4rem;
+            }
+
+            .nav-bar__user {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2.2rem;
+
+                .user__redirect {
+
+                    @include text($overpass, $size16, $o-w6, 0.06rem, normal, $neutral-very-dark-black-blue, center);
+                    text-decoration: none;
+                }
+
+                .user__button {
+                    @include button-menu (13.6rem, 4.8rem, (to right, $gradient-very-light-red, $gradient-light-red), none, 2.4rem);
+
+                    .user__redirect--sign-up{
+                        @include text($ubuntu, $size16, $u-w5, 0.02rem, normal, $neutral-white, center);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .action__title {
+        @include text ($overpass , $size38, $o-w6, -0.07em, 4.5rem, $neutral-white, center);
+        margin: 11rem 1.2rem 1.2rem
+    }
+
+    .action__text {
+        @include text ($overpass, $size20, $o-w3, -0.05em, 2.4rem, $neutral-white, center);
+        margin: 0 1.2rem 4.8rem;
+    }
+
+    .action__btn--start {
+        @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $gradient-light-red, $neutral-white, none, 2.2rem, 13.6rem, 4.74rem)
+    }
+
+    .action__btn--learn {
+        @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $neutral-white, transparent, 1px solid $neutral-white, 2.2rem, 13.6rem, 4.74rem)
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+// font-family
+$overpass: 'Overpass', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+//font-size
+$size16: 1.6rem;
+$size20: 2rem;
+$size38: 3.8rem;
+
+//font-weight
+$o-w3: 300;
+$o-w6: 600;
+$u-w4: 400;
+$u-w5: 500;
+$u-w7: 700;
+
+//colors
+//primary
+$primary-light-red: hsl(356, 100%, 66%); //CTA text
+$primary-very-light-red: hsl(355, 100%, 74%); //CTA hover background
+$primary-very-dark-blue: hsl(208, 49%, 24%); //headings
+//neutral
+$neutral-white: hsl(0, 0%, 100%); //text
+$neutral-grayish-blue: hsl(240, 2%, 79%); //footer text
+$neutral-very-dark-grayish-blue: hsla(206, 13%, 34%); //body copy
+$neutral-very-dark-black-blue: hsl(240, 10%, 16%); //footer background
+//gradient
+$gradient-very-light-red: hsl(13, 100%, 72%); //intro - CTA mobile nav
+$gradient-light-red: hsl(353, 100%, 62%); //intro - CTA mobile nav
+$gradient-very-dark-gray-blue: hsl(237, 17%, 21%); //body
+$gradient-very-dark-desaturated-blue: hsl(237, 23%, 32%); //body

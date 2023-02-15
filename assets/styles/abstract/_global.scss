@@ -1,0 +1,10 @@
+@import './root';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $overpass;
+    font-size: 62.5%;
+}
