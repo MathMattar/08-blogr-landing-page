@@ -30,71 +30,91 @@
         <h1>Create account</h1>
 
         <form class="register" data-form>
-            <fieldset class="container">
-                <label for="name" class="container__label">Name</label>
-                <span class="error-message"></span>
-                <img src="../assets/images/icon-user.svg" alt="Icon User" class="container__icon">
-                <input type="text" id="name" class="container__input" name="name" placeholder="Full name" required>
+
+            <fieldset class="register__container">
+                <label for="name" class="register__label">Name</label>
+                <span class="register__error-message"></span>
+                <img src="../assets/images/icon-user.svg" alt="Icon User" class="register__icon-input">
+                <input type="text" id="name" class="register__input" name="name" placeholder="Full name" required>
+
+                <hr>
+            </fieldset>
+
+            <fieldset class="register__container">
+                <label for="email" class="register__label">Email</label>
+                <span class="register__error-message"></span>
+                <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="register__icon-input">
+                <input type="email" id="email" class="register__input" name="email" placeholder="Email address"
+                    minlength="3" required>
+
                 <hr>
             </fieldset>
 
             <fieldset class="container">
-                <label for="email" class="container__label">Email</label>
-                <span class="error-message"></span>
-                <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="container__icon">
-                <input type="email" id="email" class="container__input" name="email" placeholder="Email address" minlength="3" required>
-                <hr>
-            </fieldset>
+                <label for="password" class="input__label">Password</label>
+                <span class="input__error-message"></span>
+                <img src="../assets/images/icon-lock.svg" alt="Icon Lock" class="input__icon">
+                <input type="password" id="password" class="register__input" name="password" placeholder="Password"
+                    minlength="8" maxlength="20" pattern="" required>
 
-            <fieldset class="container">
-                <label for="password" class="container__label">Password</label>
-                <span class="error-message"></span>
-                <img src="../assets/images/icon-lock.svg" alt="Icon Lock" class="container__icon">
-                <input type="password" id="password" class="container__input" name="password" placeholder="Password" minlength="8" maxlength="20" pattern="" required>
-                <button id="eye--on" class="button-eye --on" type="button">
-                    <img src="../assets/images/icon-eye.svg" alt="eye" class="eye">
-                    </button>
-                <button id="eye--off" class="button-eye --off" type="button">
-                    <img src="../assets/images/icon-eye-off.svg" alt="eye" class="eye">
+                <button id="eye--on" class="register__password-visibility --show" type="button">
+                    <img src="../assets/images/icon-eye.svg" alt="eye" class="password-visibility__icon">
                 </button>
+
+                <button id="eye--off" class="register__password-visibility --hide" type="button">
+                    <img src="../assets/images/icon-eye-off.svg" alt="eye" class="password-visibility__icon">
+                </button>
+
                 <hr>
+
             </fieldset>
 
-            <button type="submit" id="sign-up" class="button">Sign Up</button>
+            <button type="submit" id="sign-up" class="register__submit">Sign Up</button>
         </form>
 
         <p class="lead">Already have an account?</p>
-        <a href="./login.html" class="login">Login</a>
+        <a href="./login.html" class="user__redirect--login">Login</a>
+
     </main>
 
     <aside class="slider">
-        <section class="slide --one active">
-            <img src="../assets/images/illustration-editor-slide.svg" alt="" class="slide__image">
-            <h2>Introducing an extensible editor</h2>
-            <p class="copy">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
+
+        <section class="slider__slide --one">
+
+            <img src="../assets/images/illustration-editor-slide.svg" alt="" class="slide__image --slide-one">
+
+            <h2 class="slide__title">Introducing an extensible editor</h2>
+            <p class="slide__copy">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
                 creating content. Extensibility with plugins and themes provide easy ways
                 to add functionality or change the looks of a blog.</p>
+
         </section>
 
-        <section class="slide --two">
-            <img src="../assets/images/illustration-laptop-slide.svg" alt="" class="slide__image --laptop">
-            <h2>Free, open, simple</h2>
-            <p class="copy">Blogr is a free and open source application backed by a large
+        <section class="slider__slide --two">
+
+            <img src="../assets/images/illustration-laptop-slide.svg" alt="" class="slide__image --slide-two">
+
+            <h2 class="sile__title">Free, open, simple</h2>
+            <p class="slide__copy">Blogr is a free and open source application backed by a large
                 community of helpful developers. It supports features such as code
                 syntax highlighting, RSS feeds, social media integration, third-party
                 commenting tools, and works seamlessly with Google Analytics</p>
+
         </section>
 
-        <div class="slide-nav">
-            <button id="prevBtn" class="slide-nav__btn" ><span class="slide-nav__dot">⬤</span></button>
-            <button id="nextBtn" class="slide-nav__btn" ><span class="slide-nav__dot">🞅</span></button>
+        <div class="slide-selection">
+
+            <button id="prevBtn" class="slide-selection__button">
+                <span class="slide-selection__dot">⬤</span>
+            </button>
+
+            <button id="nextBtn" class="slide-selection__button">
+                <span class="slide-selection__dot">🞅</span>
+            </button>
+
         </div>
 
     </aside>
-
-    <script src="../assets/js/validacaoSignUp.js" type="module"></script>
-    <script src="../assets/js/slide.js"></script>
-    <script src="../assets/js/password.js"></script>
 
 </body>
 

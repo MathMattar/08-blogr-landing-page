@@ -15,11 +15,7 @@
     <title>Blogr</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/index-header.css">
-    <link rel="stylesheet" href="./assets/css/index-main.css">
-    <link rel="stylesheet" href="./assets/css/index-footer.css">
-    <link rel="stylesheet" href="./assets/css/responsivo-index.css">
+    <link rel="stylesheet" href="./assets/styles/style-index.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
@@ -27,78 +23,114 @@
 </head>
 
 <body>
-    <header>
-        <div class="gradient--header"></div>
+    <header class="header">
+
+        <div class="header__gradient"></div>
 
         <section class="header__background">
 
-            <section class="header__nav">
+            <section class="header__nav-bar">
 
                 <img src="./assets/images/logo.svg" alt="Logo" class="header__logo">
 
+                <button class="header__button-hamburguer" type="button">
+                    <img src="./assets/images/icon-hamburger.svg" alt="Button menu" class="header__icon-haburguer">
+
+                    <img src="./assets/images/icon-close.svg" alt="Button menu" class="header__icon-hamburguer --close">
+                </button>
+
                 <section class="nav-bar">
 
-                    <button class="nav-bar__sandwich" aria-expanded="false" aria-controls="nav-bar__menu">
-                        <img src="./assets/images/icon-hamburger.svg" alt="Button menu" class="nav-bar__icon-sandwich">
-                    </button>
-                    
-                    <nav class="nav-bar__menu">
-                        <div class="dropdown">
-                            <a href="" class="dropdown__link" id="link">Product
-                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow"
-                                    id="arrow">
+                    <nav class="menu-dropdown">
+
+                        <div class="dropdown__container">
+
+                            <a href="" class="dropdown__link">Product
+                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="dropdown__icon">
+
+                                <img src="./assets/images/icon-arrow-dark.svg" alt="arrow" class="dropdown__icon--dark">
                             </a>
-                            <nav class="dropdown__nav" id="nav">
-                                <a href="" class="nav-dropdown__link">Overview</a>
-                                <a href="" class="nav-dropdown__link">Pricing</a>
-                                <a href="" class="nav-dropdown__link">Marketplace</a>
-                                <a href="" class="nav-dropdown__link">Features</a>
-                                <a href="" class="nav-dropdown__link">Integrations</a>
-                            </nav>
+
+                            <ul class="dropdown__list">
+                                <li><a href="" class="dropdown__item">Overview</a></li>
+                                <li><a href="" class="dropdown__item">Pricing</a></li>
+                                <li><a href="" class="dropdown__item">Marketplace</a></li>
+                                <li><a href="" class="dropdown__item">Features</a></li>
+                                <li><a href="" class="dropdown__item">Integrations</a></li>
+                            </ul>
+
                         </div>
-                        <div class="dropdown">
+
+                        <div class="dropdown__container">
+
                             <a href="" class="dropdown__link">Company
-                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow">
+                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="dropdown__icon">
+
+                                <img src="./assets/images/icon-arrow-dark.svg" alt="arrow" class="dropdown__icon--dark">
                             </a>
-                            <nav class="dropdown__nav">
-                                <a href="" class="nav-dropdown__link">About</a>
-                                <a href="" class="nav-dropdown__link">Team</a>
-                                <a href="" class="nav-dropdown__link">Blog</a>
-                                <a href="" class="nav-dropdown__link">Careers</a>
-                            </nav>
+
+                            <ul class="dropdown__list">
+                                <li><a href="" class="dropdown__item">About</a></li>
+                                <li><a href="" class="dropdown__item">Team</a></li>
+                                <li><a href="" class="dropdown__item">Blog</a></li>
+                                <li><a href="" class="dropdown__item">Careers</a></li>
+                            </ul>
+
                         </div>
-                        <div class="dropdown">
+
+                        <div class="dropdown__container">
+
                             <a href="" class="dropdown__link">Connect
-                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="nav__arrow">
+                                <img src="./assets/images/icon-arrow-light.svg" alt="arrow" class="dropdown__icon">
+
+                                <img src="./assets/images/icon-arrow-dark.svg" alt="arrow" class="dropdown__icon--dark">
                             </a>
-                            <nav class="dropdown__nav">
-                                <a href="" class="nav-dropdown__link">Contact</a>
-                                <a href="" class="nav-dropdown__link">Newsletter</a>
-                                <a href="" class="nav-dropdown__link">LinkedIn</a>
-                            </nav>
+
+                            <ul class="dropdown__list">
+                                <li><a href="" class="dropdown__item">Contact</a></li>
+                                <li><a href="" class="dropdown__item">Newsletter</a></li>
+                                <li><a href="" class="dropdown__item">LinkedIn</a></li>
+                            </ul>
+
                         </div>
+
                     </nav>
-                    <nav class="nav-bar__buttons">
-                        <button class="nav__btn" id="login"><a href="./pages/login.html">Login</a></button>
-                        <button class="nav__btn --sign-start" id="sign-up"><a href="./pages/signup.html">Sign
-                                Up</a></button>
+
+                    <hr>
+
+                    <nav class="nav-bar__user">
+
+                        <a href="./pages/login.html" class="user__redirect">Login</a>
+
+                        <button class="user__button --sign" id="sign-up">
+                            <a href="./pages/signup.html" class="user__redirect--sign-up">Sign Up</a>
+                        </button>
+
                     </nav>
+
                 </section>
             </section>
+
             <section class="action">
+
                 <h1 class="action__title">A modern publishing platform</h1>
-                <p class="action__paragraph">Grow your audience and build your online brand</p>
-                <button class="action__btn --sign-start">Start for Free</button>
-                <button class="action__btn --learn">Learn More</button>
+                <p class="action__text">Grow your audience and build your online brand</p>
+                <button class="action__btn--start">Start for Free</button>
+                <button class="action__btn--learn">Learn More</button>
+
             </section>
         </section>
     </header>
+
     <main>
         <section class="first">
+
             <h2 class="first__title">Designed for the future</h2>
             <img src="./assets/images/illustration-editor-mobile.svg" alt="Illustration display"
                 class="first__image-mobile">
+
             <section class="copy">
+
                 <h3 class="copy__title">Introducing an extensible editor</h3>
                 <p class="copy__paragraph">
                     Bloqr features an exceedingly intuitive interface which Iets you focus
@@ -107,6 +139,7 @@
                     videos, and Markdown. Extensibility with plugins and themes provide
                     easy ways to add functionality or change the looks of a blog.
                 </p>
+
                 <h3 class="copy__title">Robust content management</h3>
                 <p class="copy__paragraph">
                     Flexible content management enables users to easily move through
@@ -114,13 +147,19 @@
                     categories, sections, format, or flow. With this functionality, you're in
                     full control.
                 </p>
+
             </section>
         </section>
+
         <section class="second">
-            <div class="gradient--second"></div>
+
+            <div class="second__gradient"></div>
+
             <section class="second__background">
+
                 <img src="./assets/images/illustration-phones.svg"
                     alt="Two phones, one of them displays on the screen the company logo." class="second__image">
+
                 <h2 class="second__title">State of the Art Infrastructure</h2>
                 <p class="second__paragraph">
                     With reliability and speed in mind, worldwide data centers provide the
@@ -128,9 +167,12 @@
                     instantly, no matter where your readers are, keeping your site
                     competitive.
                 </p>
+
             </section>
         </section>
+
         <section class="third">
+
             <img src="./assets/images/illustration-laptop-mobile.svg" alt="Laptop" class="thrid__image-mobile">
 
             <h3 class="copy__title">Free, open, simple</h3>
@@ -141,41 +183,52 @@
                 commenting tools, and works seamlessly with Google Analytics. The
                 architecture is clean and is relatively easy to learn,
             </p>
+
             <h3 class="copy__title">Powerful tooling</h3>
             <p class="copy__paragraph">
                 Batteries included. We built a simple and straightforward CLI tool that
                 makes customization and deployment a breeze, but capable of
                 producing even the most complicated sites.
             </p>
+
         </section>
     </main>
-    <footer>
-        <img src="./assets/images/logo.svg" alt="Logo" class="logo--footer">
-        <section class="nav-grid">
-            <nav class="nav-grid__column">
-                <a href="" class="nav-grid__link">Product</a>
-                <a href="" class="nav-grid__link">Overview</a>
-                <a href="" class="nav-grid__link">Pricing</a>
-                <a href="" class="nav-grid__link">Marketplace</a>
-                <a href="" class="nav-grid__link">Features</a>
-                <a href="" class="nav-grid__link">Integrations</a>
-            </nav>
-            <nav class="nav-grid__column">
-                <a href="" class="nav-grid__link">Company</a>
-                <a href="" class="nav-grid__link">About</a>
-                <a href="" class="nav-grid__link">Team</a>
-                <a href="" class="nav-grid__link">Blog</a>
-                <a href="" class="nav-grid__link">Careers</a>
-            </nav>
-            <nav class="nav-grid__column">
-                <a href="" class="nav-grid__link">Connect</a>
-                <a href="" class="nav-grid__link">Contact</a>
-                <a href="" class="nav-grid__link">Newsletter</a>
-                <a href="" class="nav-grid__link">LinkedIn</a>
-            </nav>
-        </section>
+
+    <footer class="footer">
+
+        <img src="./assets/images/logo.svg" alt="Logo" class="footer__logo">
+
+        <nav class="footer__nav">
+
+            <ul class="nav__list">
+                <li><a href="" class="nav-item">Product</a></li>
+                <li><a href="" class="nav-item">Overview</a></li>
+                <li><a href="" class="nav-item">Pricing</a></li>
+                <li><a href="" class="nav-item">Marketplace</a></li>
+                <li><a href="" class="nav-item">Features</a></li>
+                <li><a href="" class="nav-item">Integrations</a></li>
+            </ul>
+
+            <ul class="nav__list">
+                <li><a href="" class="nav-item">Company</a></li>
+                <li><a href="" class="nav-item">About</a></li>
+                <li><a href="" class="nav-item">Team</a></li>
+                <li><a href="" class="nav-item">Blog</a></li>
+                <li><a href="" class="nav-item">Careers</a></li>
+            </ul>
+
+            <ul class="nav__list">
+                <li><a href="" class="nav-item">Connect</a></li>
+                <li><a href="" class="nav-item">Contact</a></li>
+                <li><a href="" class="nav-item">Newsletter</a></li>
+                <li><a href="" class="nav-item">LinkedIn</a></li>
+            </ul>
+
+        </nav>
     </footer>
+
     <script src="./assets/js/dropdown.js"></script>
+
 </body>
 
 </html>
