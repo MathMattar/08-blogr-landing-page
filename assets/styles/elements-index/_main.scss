@@ -1,0 +1,127 @@
+@import '../abstract/root';
+
+//---------------------Mixins
+
+//Text
+@mixin text($family, $size, $weight, $letter, $line, $color, $align, $display) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter;
+    line-height: $line;
+    color: $color;
+    text-align: $align;
+    display: $display;
+}
+
+//Background-image
+@mixin background-image($url, $position, $size, $repeat) {
+    background-image: url($url);
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+//---------------------Home styles
+main {
+
+    .first {
+        @include background-image("../images/illustration-editor-mobile.svg", center 18rem, unset, no-repeat);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10.2rem 2.3rem 26.6rem 2.8rem;
+
+        .first__title {
+            @include text($overpass, $size28, $o-w6, -0.04rem, normal, $primary-very-dark-blue, center, block);
+            width: 100%;
+            margin-bottom: 42.4rem;
+        }
+
+        .copy {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+
+            .copy__area {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.8rem;
+
+                .copy__title {
+                    @include text($overpass, $size28, $o-w6, 0.01em, normal, $primary-very-dark-blue, center, block);
+                }
+
+                .copy__text {
+                    @include text($overpass, $size16, $o-w3, 0.03em, 2.8rem, $neutral-very-dark-grayish-blue, center, block);
+                    width: 94%;
+                }
+            }
+        }
+    }
+
+    .second__image-mobile {
+        @include background-image("../images/illustration-phones.svg", center center, 100%, no-repeat);
+        width: 100vw;
+        height: 40.135rem;
+        position: absolute;
+        top: 192rem;
+        left: 0;
+        z-index: 1;
+    }
+
+    .second__gradient {
+        position: absolute;
+        background-image: linear-gradient(to bottom, $gradient-very-dark-gray-blue, $gradient-very-dark-desaturated-blue);
+        width: 100vw;
+        height: 62.5rem;
+        border-radius: 0 100px;
+    }
+
+    .second {
+        position: relative;
+        @include background-image("../images/bg-pattern-circles.svg", center -23rem, 59.6rem, no-repeat);
+        width: 100vw;
+        height: 62.5rem;
+        border-radius: 0 100px 0;
+        padding: 22.4rem 2.4rem 11.4rem;
+
+        .second__title {
+            @include text($overpass, $size40, $o-w6, -0.0375em, normal, $neutral-white, center, block);
+            margin-bottom: 1.8rem
+        }
+
+        .second__text {
+            @include text($overpass, $size16, $o-w3, 0.03em, 2.8rem, $neutral-white, center, block);
+        }
+    }
+
+    .third {
+        @include background-image("../images/illustration-laptop-mobile.svg", center 6rem, 49.8rem, no-repeat);
+        padding: 45.6rem 2.3rem 9.4rem 3.4rem;
+        width: 100vw;
+
+        .copy {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+
+            .copy__area {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2.4rem;
+
+                .copy__title {
+                    @include text($overpass, $size28, $o-w6, 0.01em, normal, $primary-very-dark-blue, center, block);
+
+                }
+
+                .copy__text {
+                    @include text($overpass, $size16, $o-w3, 0.03em, 2.8rem, $neutral-very-dark-grayish-blue, center, block);
+
+                }
+            }
+        }
+    }
+}

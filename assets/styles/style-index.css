@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -192,4 +193,148 @@ html {
   border-radius: 2.2rem;
   width: 13.6rem;
   height: 4.74rem;
+}
+
+main .first {
+  background-image: url("../images/illustration-editor-mobile.svg");
+  background-position: center 18rem;
+  background-size: unset;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10.2rem 2.3rem 26.6rem 2.8rem;
+}
+main .first .first__title {
+  font-family: "Overpass", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.04rem;
+  line-height: normal;
+  color: hsl(208deg, 49%, 24%);
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 42.4rem;
+}
+main .first .copy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+main .first .copy .copy__area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+}
+main .first .copy .copy__area .copy__title {
+  font-family: "Overpass", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: normal;
+  color: hsl(208deg, 49%, 24%);
+  text-align: center;
+  display: block;
+}
+main .first .copy .copy__area .copy__text {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 2.8rem;
+  color: hsl(206deg, 13%, 34%);
+  text-align: center;
+  display: block;
+  width: 94%;
+}
+main .second__image-mobile {
+  background-image: url("../images/illustration-phones.svg");
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 40.135rem;
+  position: absolute;
+  top: 192rem;
+  left: 0;
+  z-index: 1;
+}
+main .second__gradient {
+  position: absolute;
+  background-image: linear-gradient(to bottom, hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+  width: 100vw;
+  height: 62.5rem;
+  border-radius: 0 100px;
+}
+main .second {
+  position: relative;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-position: center -23rem;
+  background-size: 59.6rem;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 62.5rem;
+  border-radius: 0 100px 0;
+  padding: 22.4rem 2.4rem 11.4rem;
+}
+main .second .second__title {
+  font-family: "Overpass", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.0375em;
+  line-height: normal;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  display: block;
+  margin-bottom: 1.8rem;
+}
+main .second .second__text {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 2.8rem;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  display: block;
+}
+main .third {
+  background-image: url("../images/illustration-laptop-mobile.svg");
+  background-position: center 6rem;
+  background-size: 49.8rem;
+  background-repeat: no-repeat;
+  padding: 45.6rem 2.3rem 9.4rem 3.4rem;
+  width: 100vw;
+}
+main .third .copy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+main .third .copy .copy__area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+main .third .copy .copy__area .copy__title {
+  font-family: "Overpass", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: normal;
+  color: hsl(208deg, 49%, 24%);
+  text-align: center;
+  display: block;
+}
+main .third .copy .copy__area .copy__text {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 2.8rem;
+  color: hsl(206deg, 13%, 34%);
+  text-align: center;
+  display: block;
 }/*# sourceMappingURL=style-index.css.map */

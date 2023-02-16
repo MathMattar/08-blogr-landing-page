@@ -1,3 +1,5 @@
 @use './abstract/root';
 @use './abstract/global';
-@use './elements-index/header'
+@use './elements-index/header';
+@use './elements-index/main';
+@use './elements-index/footer';

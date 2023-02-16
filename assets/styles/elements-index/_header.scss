@@ -44,7 +44,7 @@
 }
 
 
-//---------------------Inicio estilos
+//---------------------Home styles
 .header__gradient {
     @include gradient(to bottom, $gradient-very-light-red, $gradient-light-red);
     width: 100vw;
