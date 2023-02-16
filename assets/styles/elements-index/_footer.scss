@@ -1,0 +1,47 @@
+@import '../abstract/root';
+
+@mixin item ($family, $size, $weight, $letter, $color, $align, $display) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter;
+    color: $color;
+    text-align: $align;
+    display: $display;
+}
+
+.footer {
+    background-color: $neutral-very-dark-black-blue;
+    border-top-right-radius: 10rem;
+    padding: 7.6rem 13.6rem 8rem;
+
+    .footer__logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+        margin-top: 7.6rem;
+
+        .nav__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+
+            .nav__item--main {
+                @include item($ubuntu, $size20, $u-w5, -0.05em, $neutral-white, center, block);
+                margin-bottom: 2rem;
+            }
+
+            .nav__item {
+                @include item($ubuntu, $size20, $u-w4, -0.06em, $neutral-white, center, block);
+                width: 100%;
+            }
+        }
+    }
+}
