@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Overpass", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  width: 100vw;
+  height: 100vh;
+  padding: 5.6rem 2rem 0;
+}
+body header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+body header .header__sign-up {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: hsl(356deg, 100%, 66%);
+  display: block;
+  background-color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 2rem;
+  width: 8rem;
+  height: 4rem;
+  text-transform: uppercase;
+}
+body main {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 2.6rem 2rem;
+  border-radius: 2rem;
+}
+body main h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: hsl(208deg, 49%, 24%);
+  display: block;
+  margin-bottom: 2.4rem;
+}
+body main .form .form__input {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(4, auto);
+}
+body main .form .form__input .input__label {
+  grid-column: 1/4;
+  grid-row: 1/1;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(208deg, 49%, 24%);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+body main .form .form__input .input__error-message {
+  grid-row: 2/2;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(356deg, 100%, 66%);
+  display: none;
+  margin-bottom: 0.3rem;
+}
+body main .form .form__input .input__icon {
+  grid-column: 1/2;
+  grid-row: 3/3;
+  width: 1.2rem;
+  margin: 0 0.3rem 0 1rem;
+}
+body main .form .form__input .input__area {
+  grid-column: 2/4;
+  grid-row: 3/3;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(208deg, 49%, 24%);
+  display: unset;
+  background: transparent;
+  border: none;
+}
+body main .form .form__input .input__password-visibility {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  grid-column: 3/4;
+  grid-row: 3/3;
+  background-color: transparent;
+  border: none;
+  padding: unset;
+}
+body main .form .form__input .visibility-icon {
+  width: 1.6rem;
+}
+body main .form .form__input hr {
+  grid-column: 1/4;
+  grid-row: 4/4;
+  width: 100%;
+  border: 1px solid hsl(240deg, 2%, 79%);
+  margin-bottom: 2.4rem;
+}
+body main .form .form__input--checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .form .form__input--checkbox .input__checkbox--divider {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style-login.css.map */

@@ -34,6 +34,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .header__background .header__nav-bar .header__logo {
   grid-area: 1/1;
@@ -42,22 +43,36 @@ html {
 .header__background .header__nav-bar .header__button-hamburguer {
   background-color: transparent;
   border: none;
+  justify-self: center;
 }
-.header__background .header__nav-bar .header__button-hamburguer .header__icon-hamburguer {
+.header__background .header__nav-bar .header__button-hamburguer .header__icon-haburguer {
   width: 3.2rem;
 }
-.header__background .header__nav-bar .header__button-hamburguer .--close {
+.header__background .header__nav-bar .header__button-hamburguer .header__icon-haburguer.--hide {
   display: none;
+}
+.header__background .header__nav-bar .header__button-hamburguer .header__icon-hamburguer--close {
+  display: none;
+  width: 2.6rem;
+}
+.header__background .header__nav-bar .header__button-hamburguer .header__icon-hamburguer--close.--active {
+  display: inline-block;
 }
 .header__background .header__nav-bar .nav-bar {
   display: none;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 12.4rem;
+  right: 2.4rem;
   background-color: hsl(0deg, 0%, 100%);
   width: 32.4rem;
   border-radius: 0.6rem;
+  box-shadow: 0 0.4rem 1.5rem 0 hsla(0deg, 0%, 0%, 0.25);
   padding: 3.2rem 2.4rem;
-  margin-top: 3.6rem;
+}
+.header__background .header__nav-bar .nav-bar.--active {
+  display: flex;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown {
   display: flex;
@@ -85,8 +100,16 @@ html {
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon {
   display: none;
 }
+.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link.--rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon--dark {
   margin-left: 0.7rem;
+}
+.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link.--rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list {
   background-color: hsl(240deg, 2%, 79%);
@@ -95,6 +118,9 @@ html {
   padding: 1rem;
   width: 100%;
   display: none;
+}
+.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list.--active {
+  display: block;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list .dropdown__item {
   font-family: "Overpass", sans-serif;

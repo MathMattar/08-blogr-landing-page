@@ -1,0 +1,143 @@
+@import "../abstract/root";
+
+@mixin text($family, $size, $weight, $color, $display) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    display: $display;
+}
+
+body {
+    background-image: linear-gradient(to bottom, $gradient-very-light-red, $gradient-light-red );
+    width: 100vw;
+    height: 100vh;
+    padding: 5.6rem 2rem 0;
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.4rem;
+
+        .header__logo {}
+
+        .header__sign-up {
+            @include text($overpass, $size12, $o-w6, $primary-light-red, block);
+            background-color: $neutral-white;
+            border: none;
+            border-radius: 2rem;
+            width: 8rem;
+            height: 4rem;
+            text-transform: uppercase;
+        }
+    }
+
+    main {
+        background-color: $neutral-white;
+        padding: 2.6rem 2rem;
+        border-radius: 2rem;
+
+        h1 {
+            @include text($ubuntu, $size38, $u-w5, $primary-very-dark-blue, block);
+            margin-bottom: 2.4rem;
+        }
+
+        .form {
+            // display: flex;
+            // flex-wrap: wrap;
+            // width: 100%;
+
+            .form__input {
+                display: grid;
+                align-items: center;
+                grid-template-columns: auto 1fr auto;
+                grid-template-rows: repeat(4, auto);
+
+                .input__label {
+                    grid-column: 1/4;
+                    grid-row: 1/1;
+                    @include text($ubuntu, $size16, $u-w5, $primary-very-dark-blue, block);
+                    margin-bottom: .6rem;
+                }
+
+                .input__error-message {
+                    grid-row: 2/2;
+                    @include text($ubuntu, $size12, $u-w7, $primary-light-red, none);
+                    margin-bottom: .3rem;
+                }
+
+                .input__icon {
+                    grid-column: 1/2;
+                    grid-row: 3/3;
+                    width: 1.2rem;
+                    margin: 0 .3rem 0 1rem;
+                }
+
+                .input__area {
+                    grid-column: 2/4;
+                    grid-row: 3/3;
+                    @include text ($ubuntu, $size16, $u-w5, $primary-very-dark-blue, unset);
+                    background: transparent;
+                    border: none;
+                }
+
+                .input__password-visibility {
+                    width: fit-content;
+                    height: fit-content;
+                    grid-column: 3/4;
+                    grid-row: 3/3;
+                    background-color: transparent;
+                    border: none;
+                    padding: unset;
+
+                }
+
+                .visibility-icon {
+                    width: 1.6rem;
+                }
+
+                hr {
+                    grid-column: 1/4;
+                    grid-row: 4/4;
+                    width: 100%;
+                    border: 1px solid $neutral-grayish-blue;
+                    margin-bottom: 2.4rem;
+                }
+            }
+
+            .form__input--checkbox {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .input__checkbox--divider {
+                    display: flex;
+                    align-items: center;
+
+                    .input__checkbox {}
+
+                    .input__label--remember {}
+                }
+
+                .input__link {}
+            }
+
+            .form__submit {}
+        }
+
+        .divider{
+
+            .divider__line{}
+
+            .divider__text{}
+        }
+
+        .social{
+
+            .social__icon{}
+        }
+    }
+}

@@ -67,6 +67,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
 
         .header__logo {
             grid-area: 1/1;
@@ -74,30 +75,45 @@
         }
 
         .header__button-hamburguer {
-
             background-color: transparent;
             border: none;
+            justify-self: center;
 
-            .header__icon-hamburguer {
+            .header__icon-haburguer {
                 width: 3.2rem;
+
+                &.--hide {
+                    display: none;
+                }
+
             }
 
-            .--close {
+            .header__icon-hamburguer--close {
                 display: none;
+                width: 2.6rem;
+
+                &.--active {
+                    display: inline-block;
+                }
             }
         }
 
         .nav-bar {
-            // display: flex;
             display: none;
             flex-direction: column;
             align-items: center;
+            position: absolute;
+            top: 12.4rem;
+            right: 2.4rem;
             background-color: $neutral-white;
             width: 32.4rem;
             border-radius: .6rem;
+            box-shadow: 0 0.4rem 1.5rem 0 hsla(0, 0%, 0%, 0.25);
             padding: 3.2rem 2.4rem;
-            margin-top: 3.6rem;
-            
+
+            &.--active {
+                display: flex;
+            }
 
             .menu-dropdown {
                 display: flex;
@@ -121,8 +137,18 @@
                             display: none;
                         }
 
+                        &.--rotate {
+                            transform: rotate(180deg);
+                            transition: .5s;
+                        }
+
                         .dropdown__icon--dark {
                             margin-left: .7rem;
+                        }
+
+                        &.--rotate {
+                            transform: rotate(180deg);
+                            transition: .5s;
                         }
                     }
 
@@ -134,6 +160,10 @@
                         padding: 1rem;
                         width: 100%;
                         display: none;
+
+                        &.--active {
+                            display: block;
+                        }
 
                         .dropdown__item {
                             @include text ($overpass, $size16, $o-w6, normal, normal, $neutral-very-dark-grayish-blue, center);
@@ -166,7 +196,7 @@
                 .user__button {
                     @include button-menu (13.6rem, 4.8rem, (to right, $gradient-very-light-red, $gradient-light-red), none, 2.4rem);
 
-                    .user__redirect--sign-up{
+                    .user__redirect--sign-up {
                         @include text($ubuntu, $size16, $u-w5, 0.02rem, normal, $neutral-white, center);
                         text-decoration: none;
                     }
