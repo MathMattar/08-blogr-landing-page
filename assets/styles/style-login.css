@@ -70,7 +70,7 @@ body main .form .form__input .input__error-message {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(356deg, 100%, 66%);
-  display: none;
+  display: unset;
   margin-bottom: 0.3rem;
 }
 body main .form .form__input .input__icon {
@@ -83,7 +83,7 @@ body main .form .form__input .input__area {
   grid-column: 2/4;
   grid-row: 3/3;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: hsl(208deg, 49%, 24%);
   display: unset;
@@ -114,10 +114,68 @@ body main .form .form__input hr {
 body main .form .form__input--checkbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  margin-bottom: 2.4rem;
 }
-body main .form .form__input--checkbox .input__checkbox--divider {
+body main .form .form__input--checkbox .input__checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+body main .form .form__input--checkbox .input__label--remember {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(208deg, 49%, 24%);
+  display: unset;
+}
+body main .form .form__submit {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  width: 20rem;
+  height: 4rem;
+  background-image: linear-gradient(to right, hsl(237deg, 23%, 32%) 60%, hsl(237deg, 17%, 21%));
+  border: none;
+  border-radius: 2rem;
+  margin: 0 auto 1.2rem;
+}
+body main .form .input__link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(208deg, 49%, 24%);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+body main .divider {
   display: flex;
   align-items: center;
+  margin-bottom: 1.2rem;
+}
+body main .divider .divider__line {
+  width: 13rem;
+  border: 1px solid hsl(240deg, 2%, 79%);
+}
+body main .divider .divider__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(208deg, 49%, 24%);
+  display: unset;
+}
+body main .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+body main .social .social__icon {
+  width: 4rem;
 }/*# sourceMappingURL=style-login.css.map */

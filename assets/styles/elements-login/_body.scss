@@ -21,8 +21,6 @@ body {
         align-items: center;
         margin-bottom: 2.4rem;
 
-        .header__logo {}
-
         .header__sign-up {
             @include text($overpass, $size12, $o-w6, $primary-light-red, block);
             background-color: $neutral-white;
@@ -45,9 +43,6 @@ body {
         }
 
         .form {
-            // display: flex;
-            // flex-wrap: wrap;
-            // width: 100%;
 
             .form__input {
                 display: grid;
@@ -64,7 +59,7 @@ body {
 
                 .input__error-message {
                     grid-row: 2/2;
-                    @include text($ubuntu, $size12, $u-w7, $primary-light-red, none);
+                    @include text($ubuntu, $size12, $u-w7, $primary-light-red, unset);
                     margin-bottom: .3rem;
                 }
 
@@ -78,7 +73,7 @@ body {
                 .input__area {
                     grid-column: 2/4;
                     grid-row: 3/3;
-                    @include text ($ubuntu, $size16, $u-w5, $primary-very-dark-blue, unset);
+                    @include text ($ubuntu, $size14, $u-w5, $primary-very-dark-blue, unset);
                     background: transparent;
                     border: none;
                 }
@@ -110,34 +105,65 @@ body {
             .form__input--checkbox {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: flex-end;
                 align-items: center;
+                margin-bottom: 2.4rem;
 
-                .input__checkbox--divider {
-                    display: flex;
-                    align-items: center;
-
-                    .input__checkbox {}
-
-                    .input__label--remember {}
+                .input__checkbox {
+                    width: 1.2rem;
+                    height: 1.2rem;
                 }
 
-                .input__link {}
+                .input__label--remember {
+                    @include text($ubuntu, $size14, $u-w5, $primary-very-dark-blue, unset);
+
+                }
             }
 
-            .form__submit {}
+            .form__submit {
+                @include text($ubuntu, $size20, $u-w7, $neutral-white, block);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                width: 20rem;
+                height: 4rem;
+                background-image: linear-gradient(to right, $gradient-very-dark-desaturated-blue 60%, $gradient-very-dark-gray-blue);
+                border: none;
+                border-radius: 2rem;
+                margin: 0 auto 1.2rem;
+            }
+
+            .input__link {
+                @include text($ubuntu, $size12, $u-w5, $primary-very-dark-blue, block);
+                text-decoration: none;
+                text-align: center;
+                margin-bottom: 1.2rem;
+            }
         }
 
-        .divider{
+        .divider {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
 
-            .divider__line{}
+            .divider__line {
+                width: 13rem;
+                border: 1px solid $neutral-grayish-blue;
+            }
 
-            .divider__text{}
+            .divider__text {
+                @include text($ubuntu, $size16, $u-w5, $primary-very-dark-blue, unset)
+            }
         }
 
-        .social{
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
 
-            .social__icon{}
+            .social__icon {
+                width: 4rem;
+            }
         }
     }
 }

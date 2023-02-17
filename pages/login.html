@@ -35,7 +35,7 @@
             <fieldset class="form__input">
 
                 <label for="email" class="input__label">Email or username</label>
-                <span class="input__error-message"></span>
+                <span class="input__error-message">Error</span>
                 <img src="../assets/images/icon-user.svg" alt="User" class="input__icon">
                 <input type="email" id="email" class="input__area" name="email" placeholder="Email address or username"
                     minlength="3" required>
@@ -47,7 +47,7 @@
             <fieldset class="form__input">
 
                 <label for="password" class="input__label">Password</label>
-                <span class="input__error-message"></span>
+                <span class="input__error-message">Error</span>
                 <img src="../assets/images/icon-lock.svg" alt="Lock" class="input__icon">
                 <input type="password" id="password" class="input__area" name="password" placeholder="Password"
                     minlength="10" maxlength="20" required pattern="">
@@ -65,17 +65,17 @@
             </fieldset>
 
             <fieldset class="form__input--checkbox">
-                <div class="input__checkbox--divider">
-                    <input type="checkbox" id="checkbox" class="input__checkbox">
-                    <label for="checkbox" class="input__label --remember">Remember me</label>
-                </div>
-                <a href="" class="input__link">Forgot your password?</a>
+                
+                <input type="checkbox" id="checkbox" class="input__checkbox" checked>
+                <label for="checkbox" class="input__label--remember">Remember me</label>
 
             </fieldset>
 
             <button type="submit" id="login" class="form__submit">
                 Login
             </button>
+
+            <a href="" class="input__link">Forgot your password?</a>
 
         </form>
 
@@ -90,8 +90,6 @@
             <img src="../assets/images/icon-google.svg" alt="Google" id="google" class="social__icon">
             <img src="../assets/images/icon-twitter.svg" alt="Twitter" id="twitter" class="social__icon">
         </section>
-
-        <a href="./signup.html" class="user__redirect--sign-up">Sign Up</a>
 
     </main>
 
