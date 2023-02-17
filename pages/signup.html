@@ -15,8 +15,7 @@
     <title>Blogr</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="../assets/css/root.css">
-    <link rel="stylesheet" href="../assets/css/signup.css">
+    <link rel="stylesheet" href="../assets/styles/style-sign-up.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
@@ -24,45 +23,49 @@
 </head>
 
 <body>
+    <header>
+
+        <a href="../index.html"><img src="../assets/images/logo.svg" alt="Logo" class="logo__header"></a>
+
+    </header>
     <main>
-        <a href="../index.html"><img src="../assets/images/logo-blue.svg" alt="Logo" class="logo"></a>
 
         <h1>Create account</h1>
 
         <form class="register" data-form>
 
-            <fieldset class="register__container">
-                <label for="name" class="register__label">Name</label>
-                <span class="register__error-message"></span>
-                <img src="../assets/images/icon-user.svg" alt="Icon User" class="register__icon-input">
-                <input type="text" id="name" class="register__input" name="name" placeholder="Full name" required>
+            <fieldset class="register__input">
+                <label for="name" class="input__label">Name</label>
+                <span class="input__error-message">Error</span>
+                <img src="../assets/images/icon-user.svg" alt="Icon User" class="input__icon">
+                <input type="text" id="name" class="input__area" name="name" placeholder="Full name" required>
 
                 <hr>
             </fieldset>
 
-            <fieldset class="register__container">
-                <label for="email" class="register__label">Email</label>
-                <span class="register__error-message"></span>
-                <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="register__icon-input">
-                <input type="email" id="email" class="register__input" name="email" placeholder="Email address"
+            <fieldset class="register__input">
+                <label for="email" class="input__label">Email</label>
+                <span class="input__error-message">Error</span>
+                <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="input__icon">
+                <input type="email" id="email" class="input__area" name="email" placeholder="Email address"
                     minlength="3" required>
 
                 <hr>
             </fieldset>
 
-            <fieldset class="container">
+            <fieldset class="register__input">
                 <label for="password" class="input__label">Password</label>
-                <span class="input__error-message"></span>
+                <span class="input__error-message">Error</span>
                 <img src="../assets/images/icon-lock.svg" alt="Icon Lock" class="input__icon">
-                <input type="password" id="password" class="register__input" name="password" placeholder="Password"
+                <input type="password" id="password" class="input__area" name="password" placeholder="Password"
                     minlength="8" maxlength="20" pattern="" required>
 
-                <button id="eye--on" class="register__password-visibility --show" type="button">
-                    <img src="../assets/images/icon-eye.svg" alt="eye" class="password-visibility__icon">
+                <button id="eye--on" class="input__password-visibility --show" type="button">
+                    <img src="../assets/images/icon-eye.svg" alt="eye" class="visibility-icon">
                 </button>
 
-                <button id="eye--off" class="register__password-visibility --hide" type="button">
-                    <img src="../assets/images/icon-eye-off.svg" alt="eye" class="password-visibility__icon">
+                <button id="eye--off" class="input__password-visibility --hide" type="button">
+                    <img src="../assets/images/icon-eye-off.svg" alt="eye" class="visibility-icon">
                 </button>
 
                 <hr>
@@ -73,11 +76,12 @@
         </form>
 
         <p class="lead">Already have an account?</p>
-        <a href="./login.html" class="user__redirect--login">Login</a>
+
+        <button class="redirect-login">Login</button>
 
     </main>
 
-    <aside class="slider">
+    <!-- <aside class="slider">
 
         <section class="slider__slide --one">
 
@@ -114,7 +118,7 @@
 
         </div>
 
-    </aside>
+    </aside> -->
 
 </body>
 
