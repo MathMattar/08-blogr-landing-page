@@ -23,12 +23,13 @@
     .footer__nav {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 5rem;
         margin-top: 7.6rem;
 
         .nav__list {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
@@ -39,8 +40,7 @@
             }
 
             .nav__item {
-                @include item($ubuntu, $size20, $u-w4, -0.06em, $neutral-white, center, block);
-                width: 100%;
+                @include item($ubuntu, $size20, $u-w4, -0.06em, $neutral-white, center, unset);
             }
         }
     }

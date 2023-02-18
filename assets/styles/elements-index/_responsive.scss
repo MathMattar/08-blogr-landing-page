@@ -1,0 +1,250 @@
+@import '../abstract/root';
+
+// variables
+
+$width-logo-header: 10.1rem;
+$margin-logo-header: 6.4rem;
+$calc-nav-bar: $width-logo-header + $margin-logo-header;
+
+$width-logo-footer: 10.1rem;
+$margin-logo-footer: 18.4rem;
+$calc-nav-bar-footer: $width-logo-footer + $margin-logo-footer;
+
+@mixin text($family, $size, $weight, $letter, $line, $color, $align) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter;
+    line-height: $line;
+    color: $color;
+    text-align: $align;
+}
+
+@media only screen and (min-width: 1020px) {
+
+    .header__background {
+        padding: 5.8rem 16rem 15.4rem 16.5rem;
+
+        .header__nav-bar {
+            justify-content: start;
+            align-items: center;
+
+            .header__logo {
+                width: $width-logo-header;
+                margin-right: $margin-logo-header;
+            }
+
+            .header__button-hamburguer {
+                display: none;
+            }
+
+            .nav-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: transparent;
+                position: inherit;
+                border-radius: unset;
+                box-shadow: none;
+                width: calc(100% - $calc-nav-bar);
+                padding: unset;
+
+                .menu-dropdown {
+                    flex-direction: row;
+                    gap: 1rem;
+                    width: fit-content;
+
+                    .dropdown__container {
+
+                        .dropdown__link {
+                            margin: unset;
+                            color: $neutral-white;
+
+                            .dropdown__icon {
+                                display: block;
+                                margin-left: .7rem;
+                            }
+
+                            .dropdown__icon--dark {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown__list {
+                            display: none;
+                            flex-wrap: wrap;
+                            flex-direction: column;
+                            gap: 1.5rem;
+                            background-color: $neutral-white;
+                            position: absolute;
+                            margin: 2.6rem 0 0 0;
+                            border-radius: .6rem;
+                            padding: 3.2rem 6rem 3.2rem 2rem;
+                            width: fit-content;
+
+                            &active {
+                                display: flex;
+                            }
+
+                            .dropdown__item {
+                                letter-spacing: -0.04rem;
+                                text-align: left;
+                                margin: unset;
+                            }
+                        }
+                    }
+                }
+
+                hr {
+                    display: none;
+                }
+
+                .nav-bar__user {
+                    flex-direction: row;
+                    justify-self: end;
+                    gap: 3rem;
+
+                    .user__redirect {
+                        color: $neutral-white;
+                    }
+
+                    .user__button {
+                        background-image: none;
+                        background-color: $neutral-white;
+
+                        .user__redirect--sign-up {
+                            color: $primary-light-red;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 3680px) {
+
+    .header__background {
+
+        .action {
+            max-width: unset;
+
+            .action__title {
+                font-size: $size64;
+            }
+
+            .action__text {
+                width: 100%;
+            }
+        }
+    }
+
+    main {
+
+        .first {
+            background-image: url(../images/illustration-editor-desktop.svg);
+            background-position: 73.6rem 7.2rem;
+            background-position: 51% 15%;
+            padding: 15.8rem 0 25.6rem;
+
+            .first__title {
+                font-size: $size40;
+                margin-bottom: 10.3rem;
+            }
+
+            .copy {
+                gap: 7.5rem;
+                padding: 0 73.6rem 0 16.5rem;
+
+                .copy__area {
+                    gap: 3rem;
+                    width: 100%;
+
+                    .copy__title {
+                        text-align: start;
+                    }
+
+                    .copy__text {
+                        text-align: start;
+                        max-width: none;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .second__gradient {
+            height: 40rem;
+        }
+
+        .second {
+            background-size: 101.4rem;
+            background-position: -21.3rem -50.75rem;
+            height: 40rem;
+            padding: 11.3rem 17.8rem 11.3rem 73.6rem;
+
+            .second__image-mobile {
+                background-size: 55.2rem;
+                background-position: 12.5rem center;
+                height: 58rem;
+                top: -6.9rem;
+
+            }
+
+            .second__title {
+                text-align: left;
+                margin-bottom: 2.2rem;
+            }
+
+            .second__text {
+                text-align: left;
+            }
+        }
+
+        .third {
+            background-image: url(../images/illustration-laptop-desktop.svg);
+            background-position: -23rem 11.6rem;
+            background-size: 78.7rem;
+            padding: 30.1rem 17.8rem 30.4rem 73.4rem;
+            
+
+            .copy {
+                gap: 8rem;
+
+                .copy__area {
+                    gap: 3rem;
+                    
+
+                    .copy__title {
+                        text-align: left;
+                    }
+
+                    .copy__text {
+                        text-align: left;
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        padding: 7rem 16.5rem 7.8rem 13.5rem;
+
+        .footer__logo {
+            display: unset;
+            margin: 0 $margin-logo-footer 0 0;
+        }
+
+        .footer__nav {
+            justify-content: space-between;
+            margin: unset;
+            width: calc(100% - $calc-nav-bar-footer);
+        }
+    }
+}

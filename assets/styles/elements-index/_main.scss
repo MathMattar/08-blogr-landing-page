@@ -40,6 +40,7 @@ main {
         .copy {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 4rem;
 
             .copy__area {
@@ -50,24 +51,16 @@ main {
 
                 .copy__title {
                     @include text($overpass, $size28, $o-w6, 0.01em, normal, $primary-very-dark-blue, center, block);
+                    width: 100%;
                 }
 
                 .copy__text {
                     @include text($overpass, $size16, $o-w3, 0.03em, 2.8rem, $neutral-very-dark-grayish-blue, center, block);
                     width: 94%;
+                    max-width: 45.8rem;
                 }
             }
         }
-    }
-
-    .second__image-mobile {
-        @include background-image("../images/illustration-phones.svg", center center, 100%, no-repeat);
-        width: 100vw;
-        height: 40.135rem;
-        position: absolute;
-        top: 192rem;
-        left: 0;
-        z-index: 1;
     }
 
     .second__gradient {
@@ -85,6 +78,19 @@ main {
         height: 62.5rem;
         border-radius: 0 100px 0;
         padding: 22.4rem 2.4rem 11.4rem;
+        z-index: 1;
+
+        .second__image-mobile {
+            @include background-image("../images/illustration-phones.svg", center center, 38.2rem, no-repeat);
+            width: 100vw;
+            height: 100%;
+            position: absolute;
+            top: -28rem;
+            left: 0;
+            z-index: 1;
+        }
+    
+
 
         .second__title {
             @include text($overpass, $size40, $o-w6, -0.0375em, normal, $neutral-white, center, block);
@@ -93,6 +99,8 @@ main {
 
         .second__text {
             @include text($overpass, $size16, $o-w3, 0.03em, 2.8rem, $neutral-white, center, block);
+            max-width: 44.8rem;
+            margin: 0 auto;
         }
     }
 
@@ -104,6 +112,7 @@ main {
         .copy {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 4rem;
 
             .copy__area {
@@ -114,11 +123,13 @@ main {
 
                 .copy__title {
                     @include text($overpass, $size28, $o-w6, 0.01em, normal, $primary-very-dark-blue, center, block);
+                    width: 100%;
 
                 }
 
                 .copy__text {
                     @include text($overpass, $size16, $o-w3, 0.03em, 2.8rem, $neutral-very-dark-grayish-blue, center, block);
+                    max-width: 44.8rem;
 
                 }
             }

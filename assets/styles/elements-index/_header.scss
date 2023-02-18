@@ -61,6 +61,8 @@
     background-repeat: no-repeat;
     background-position: -35rem -26rem;
     width: 100vw;
+    height: 60rem;
+    border-bottom-left-radius: 10rem;
     padding: 5.6rem 2.4rem 15.5rem;
 
     .header__nav-bar {
@@ -122,7 +124,6 @@
                 width: 100%;
 
                 .dropdown__container {
-
                     width: 100%;
 
                     .dropdown__link {
@@ -153,7 +154,6 @@
                     }
 
                     .dropdown__list {
-
                         background-color: $neutral-grayish-blue;
                         margin-bottom: 2.5rem;
                         border-radius: .6rem;
@@ -210,7 +210,9 @@
 .action {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    max-width: 50rem;
+    margin: 0 auto;
 
     .action__title {
         @include text ($overpass , $size38, $o-w6, -0.07em, 4.5rem, $neutral-white, center);
@@ -220,13 +222,16 @@
     .action__text {
         @include text ($overpass, $size20, $o-w3, -0.05em, 2.4rem, $neutral-white, center);
         margin: 0 1.2rem 4.8rem;
+        width: 100vw;
     }
 
     .action__btn--start {
-        @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $gradient-light-red, $neutral-white, none, 2.2rem, 13.6rem, 4.74rem)
+        @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $gradient-light-red, $neutral-white, none, 2.2rem, 13.6rem, 4.74rem);
+        margin-right: .8rem
     }
 
     .action__btn--learn {
-        @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $neutral-white, transparent, 1px solid $neutral-white, 2.2rem, 13.6rem, 4.74rem)
+        @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $neutral-white, transparent, 1px solid $neutral-white, 2.2rem, 13.6rem, 4.74rem);
+        margin-left: .8rem;
     }
 }

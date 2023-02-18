@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -28,6 +29,8 @@ html {
   background-repeat: no-repeat;
   background-position: -35rem -26rem;
   width: 100vw;
+  height: 60rem;
+  border-bottom-left-radius: 10rem;
   padding: 5.6rem 2.4rem 15.5rem;
 }
 .header__background .header__nav-bar {
@@ -175,7 +178,9 @@ html {
 .action {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 .action .action__title {
   font-family: "Overpass", sans-serif;
@@ -196,6 +201,7 @@ html {
   color: hsl(0deg, 0%, 100%);
   text-align: center;
   margin: 0 1.2rem 4.8rem;
+  width: 100vw;
 }
 .action .action__btn--start {
   font-family: "Ubuntu", sans-serif;
@@ -208,6 +214,7 @@ html {
   border-radius: 2.2rem;
   width: 13.6rem;
   height: 4.74rem;
+  margin-right: 0.8rem;
 }
 .action .action__btn--learn {
   font-family: "Ubuntu", sans-serif;
@@ -220,6 +227,7 @@ html {
   border-radius: 2.2rem;
   width: 13.6rem;
   height: 4.74rem;
+  margin-left: 0.8rem;
 }
 
 main .first {
@@ -246,6 +254,7 @@ main .first .first__title {
 main .first .copy {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 4rem;
 }
 main .first .copy .copy__area {
@@ -263,6 +272,7 @@ main .first .copy .copy__area .copy__title {
   color: hsl(208deg, 49%, 24%);
   text-align: center;
   display: block;
+  width: 100%;
 }
 main .first .copy .copy__area .copy__text {
   font-family: "Overpass", sans-serif;
@@ -274,18 +284,7 @@ main .first .copy .copy__area .copy__text {
   text-align: center;
   display: block;
   width: 94%;
-}
-main .second__image-mobile {
-  background-image: url("../images/illustration-phones.svg");
-  background-position: center center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 40.135rem;
-  position: absolute;
-  top: 192rem;
-  left: 0;
-  z-index: 1;
+  max-width: 45.8rem;
 }
 main .second__gradient {
   position: absolute;
@@ -304,6 +303,19 @@ main .second {
   height: 62.5rem;
   border-radius: 0 100px 0;
   padding: 22.4rem 2.4rem 11.4rem;
+  z-index: 1;
+}
+main .second .second__image-mobile {
+  background-image: url("../images/illustration-phones.svg");
+  background-position: center center;
+  background-size: 38.2rem;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: -28rem;
+  left: 0;
+  z-index: 1;
 }
 main .second .second__title {
   font-family: "Overpass", sans-serif;
@@ -325,6 +337,8 @@ main .second .second__text {
   color: hsl(0deg, 0%, 100%);
   text-align: center;
   display: block;
+  max-width: 44.8rem;
+  margin: 0 auto;
 }
 main .third {
   background-image: url("../images/illustration-laptop-mobile.svg");
@@ -337,6 +351,7 @@ main .third {
 main .third .copy {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 4rem;
 }
 main .third .copy .copy__area {
@@ -354,6 +369,7 @@ main .third .copy .copy__area .copy__title {
   color: hsl(208deg, 49%, 24%);
   text-align: center;
   display: block;
+  width: 100%;
 }
 main .third .copy .copy__area .copy__text {
   font-family: "Overpass", sans-serif;
@@ -364,6 +380,7 @@ main .third .copy .copy__area .copy__text {
   color: hsl(206deg, 13%, 34%);
   text-align: center;
   display: block;
+  max-width: 44.8rem;
 }
 
 .footer {
@@ -378,12 +395,13 @@ main .third .copy .copy__area .copy__text {
 .footer .footer__nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 5rem;
   margin-top: 7.6rem;
 }
 .footer .footer__nav .nav__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
@@ -405,6 +423,181 @@ main .third .copy .copy__area .copy__text {
   letter-spacing: -0.06em;
   color: hsl(0deg, 0%, 100%);
   text-align: center;
-  display: block;
-  width: 100%;
+  display: unset;
+}
+
+@media only screen and (min-width: 1020px) {
+  .header__background {
+    padding: 5.8rem 16rem 15.4rem 16.5rem;
+  }
+  .header__background .header__nav-bar {
+    justify-content: start;
+    align-items: center;
+  }
+  .header__background .header__nav-bar .header__logo {
+    width: 10.1rem;
+    margin-right: 6.4rem;
+  }
+  .header__background .header__nav-bar .header__button-hamburguer {
+    display: none;
+  }
+  .header__background .header__nav-bar .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    position: inherit;
+    border-radius: unset;
+    box-shadow: none;
+    width: calc(100% - 16.5rem);
+    padding: unset;
+  }
+  .header__background .header__nav-bar .nav-bar .menu-dropdown {
+    flex-direction: row;
+    gap: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link {
+    margin: unset;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon {
+    display: block;
+    margin-left: 0.7rem;
+  }
+  .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon--dark {
+    display: none;
+  }
+  .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: hsl(0deg, 0%, 100%);
+    position: absolute;
+    margin: 2.6rem 0 0 0;
+    border-radius: 0.6rem;
+    padding: 3.2rem 6rem 3.2rem 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__listactive {
+    display: flex;
+  }
+  .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list .dropdown__item {
+    letter-spacing: -0.04rem;
+    text-align: left;
+    margin: unset;
+  }
+  .header__background .header__nav-bar .nav-bar hr {
+    display: none;
+  }
+  .header__background .header__nav-bar .nav-bar .nav-bar__user {
+    flex-direction: row;
+    justify-self: end;
+    gap: 3rem;
+  }
+  .header__background .header__nav-bar .nav-bar .nav-bar__user .user__redirect {
+    color: hsl(0deg, 0%, 100%);
+  }
+  .header__background .header__nav-bar .nav-bar .nav-bar__user .user__button {
+    background-image: none;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .header__background .header__nav-bar .nav-bar .nav-bar__user .user__button .user__redirect--sign-up {
+    color: hsl(356deg, 100%, 66%);
+  }
+}
+@media only screen and (min-width: 1360px) and (max-width: 3680px) {
+  .header__background .action {
+    max-width: unset;
+  }
+  .header__background .action .action__title {
+    font-size: 6.4rem;
+  }
+  .header__background .action .action__text {
+    width: 100%;
+  }
+  main .first {
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-position: 73.6rem 7.2rem;
+    background-position: 51% 15%;
+    padding: 15.8rem 0 25.6rem;
+  }
+  main .first .first__title {
+    font-size: 4rem;
+    margin-bottom: 10.3rem;
+  }
+  main .first .copy {
+    gap: 7.5rem;
+    padding: 0 73.6rem 0 16.5rem;
+  }
+  main .first .copy .copy__area {
+    gap: 3rem;
+    width: 100%;
+  }
+  main .first .copy .copy__area .copy__title {
+    text-align: start;
+  }
+  main .first .copy .copy__area .copy__text {
+    text-align: start;
+    max-width: none;
+    width: 100%;
+  }
+  main .second__gradient {
+    height: 40rem;
+  }
+  main .second {
+    background-size: 101.4rem;
+    background-position: -21.3rem -50.75rem;
+    height: 40rem;
+    padding: 11.3rem 17.8rem 11.3rem 73.6rem;
+  }
+  main .second .second__image-mobile {
+    background-size: 55.2rem;
+    background-position: 12.5rem center;
+    height: 58rem;
+    top: -6.9rem;
+  }
+  main .second .second__title {
+    text-align: left;
+    margin-bottom: 2.2rem;
+  }
+  main .second .second__text {
+    text-align: left;
+  }
+  main .third {
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-position: -23rem 11.6rem;
+    background-size: 78.7rem;
+    padding: 30.1rem 17.8rem 30.4rem 73.4rem;
+  }
+  main .third .copy {
+    gap: 8rem;
+  }
+  main .third .copy .copy__area {
+    gap: 3rem;
+  }
+  main .third .copy .copy__area .copy__title {
+    text-align: left;
+  }
+  main .third .copy .copy__area .copy__text {
+    text-align: left;
+    max-width: none;
+  }
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    padding: 7rem 16.5rem 7.8rem 13.5rem;
+  }
+  .footer .footer__logo {
+    display: unset;
+    margin: 0 18.4rem 0 0;
+  }
+  .footer .footer__nav {
+    justify-content: space-between;
+    margin: unset;
+    width: calc(100% - 28.5rem);
+  }
 }/*# sourceMappingURL=style-index.css.map */
