@@ -154,22 +154,23 @@
                     }
 
                     .dropdown__list {
+                        flex-direction: column;
+                        gap: 1.5rem;
                         background-color: $neutral-grayish-blue;
                         margin-bottom: 2.5rem;
                         border-radius: .6rem;
                         padding: 1rem;
-                        width: 100%;
                         display: none;
 
                         &.--active {
-                            display: block;
+                            display: flex;
                         }
 
                         .dropdown__item {
                             @include text ($overpass, $size16, $o-w6, normal, normal, $neutral-very-dark-grayish-blue, center);
                             text-decoration: none;
                             display: block;
-                            margin: 1rem 0 1rem;
+                            // margin: 1rem 0 1rem;
                         }
                     }
                 }

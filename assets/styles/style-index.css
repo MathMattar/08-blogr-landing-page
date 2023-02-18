@@ -115,15 +115,16 @@ html {
   transition: 0.5s;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list {
+  flex-direction: column;
+  gap: 1.5rem;
   background-color: hsl(240deg, 2%, 79%);
   margin-bottom: 2.5rem;
   border-radius: 0.6rem;
   padding: 1rem;
-  width: 100%;
   display: none;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list.--active {
-  display: block;
+  display: flex;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list .dropdown__item {
   font-family: "Overpass", sans-serif;
@@ -135,7 +136,6 @@ html {
   text-align: center;
   text-decoration: none;
   display: block;
-  margin: 1rem 0 1rem;
 }
 .header__background .header__nav-bar .nav-bar hr {
   width: 100%;
@@ -510,6 +510,9 @@ main .third .copy .copy__area .copy__text {
   }
 }
 @media only screen and (min-width: 1360px) {
+  .header__background .header__nav-bar .nav-bar .menu-dropdown {
+    gap: 3rem;
+  }
   .header__background .action {
     max-width: unset;
   }

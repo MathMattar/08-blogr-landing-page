@@ -128,6 +128,16 @@ $calc-nav-bar-footer: $width-logo-footer + $margin-logo-footer;
 
     .header__background {
 
+        .header__nav-bar {
+
+            .nav-bar {
+
+                .menu-dropdown {
+                    gap: 3rem;
+                }
+            }
+        }
+
         .action {
             max-width: unset;
 
