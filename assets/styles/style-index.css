@@ -509,7 +509,7 @@ main .third .copy .copy__area .copy__text {
     color: hsl(356deg, 100%, 66%);
   }
 }
-@media only screen and (min-width: 1360px) and (max-width: 3680px) {
+@media only screen and (min-width: 1360px) {
   .header__background .action {
     max-width: unset;
   }
@@ -521,21 +521,20 @@ main .third .copy .copy__area .copy__text {
   }
   main .first {
     background-image: url(../images/illustration-editor-desktop.svg);
-    background-position: 73.6rem 7.2rem;
-    background-position: 51% 15%;
-    padding: 15.8rem 0 25.6rem;
+    background-position: calc(100% + 27.5rem) 7.2rem;
   }
   main .first .first__title {
     font-size: 4rem;
     margin-bottom: 10.3rem;
   }
   main .first .copy {
+    justify-content: start;
     gap: 7.5rem;
-    padding: 0 73.6rem 0 16.5rem;
+    padding-left: 14.3rem;
   }
   main .first .copy .copy__area {
     gap: 3rem;
-    width: 100%;
+    width: 50%;
   }
   main .first .copy .copy__area .copy__title {
     text-align: start;
@@ -565,7 +564,9 @@ main .third .copy .copy__area .copy__text {
     margin-bottom: 2.2rem;
   }
   main .second .second__text {
+    max-width: 100%;
     text-align: left;
+    margin: unset;
   }
   main .third {
     background-image: url(../images/illustration-laptop-desktop.svg);
@@ -599,5 +600,78 @@ main .third .copy .copy__area .copy__text {
     justify-content: space-between;
     margin: unset;
     width: calc(100% - 28.5rem);
+  }
+}
+@media only screen and (min-width: 1920px) {
+  main .second .second__text {
+    max-width: none;
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  main .first {
+    justify-content: center;
+  }
+  main .first .copy {
+    justify-content: center;
+    width: 40%;
+    padding: unset;
+  }
+  main .first .copy .copy__area {
+    width: 100%;
+    justify-content: start;
+  }
+  main .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: unset;
+  }
+  main .second .second__title {
+    text-align: center;
+    width: 100%;
+  }
+  main .second .second__text {
+    text-align: center;
+    align-self: center;
+    max-width: 35%;
+  }
+  main .third {
+    padding: 30.1rem 73.6rem 30.4rem 73.4rem;
+  }
+}
+@media only screen and (min-width: 3840px) {
+  main .first {
+    justify-content: center;
+  }
+  main .first .copy {
+    width: 70%;
+  }
+  main .second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 11.3rem;
+  }
+  main .second .second__title {
+    text-align: center;
+    width: 100%;
+  }
+  main .second .second__text {
+    text-align: center;
+    width: 30%;
+    padding: unset;
+  }
+  main .third {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30.1rem 0 30.4rem;
+  }
+  main .third .copy {
+    width: 30%;
+  }
+  .footer {
+    padding: 7rem 25% 7.8rem;
   }
 }/*# sourceMappingURL=style-index.css.map */
