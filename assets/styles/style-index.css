@@ -646,9 +646,10 @@ main .third .copy .copy__area .copy__text {
 @media only screen and (min-width: 3840px) {
   main .first {
     justify-content: center;
+    padding: 10.2rem 2.3rem 44.6rem 2.8rem;
   }
   main .first .copy {
-    width: 70%;
+    max-width: 34%;
   }
   main .second {
     display: flex;

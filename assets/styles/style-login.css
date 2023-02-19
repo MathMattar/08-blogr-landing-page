@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(to bottom, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
   width: 100vw;
   height: 100vh;
@@ -21,6 +25,8 @@ body header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2.4rem;
+  width: 33.5rem;
+  max-width: 42rem;
 }
 body header .header__sign-up {
   font-family: "Overpass", sans-serif;
@@ -37,8 +43,10 @@ body header .header__sign-up {
 }
 body main {
   background-color: hsl(0deg, 0%, 100%);
-  padding: 2.6rem 2rem;
+  width: 33.5rem;
+  max-width: 42rem;
   border-radius: 2rem;
+  padding: 2.6rem 2rem;
 }
 body main h1 {
   font-family: "Ubuntu", sans-serif;
@@ -161,7 +169,7 @@ body main .divider {
   margin-bottom: 1.2rem;
 }
 body main .divider .divider__line {
-  width: 13rem;
+  width: 100%;
   border: 1px solid hsl(240deg, 2%, 79%);
 }
 body main .divider .divider__text {
@@ -170,6 +178,7 @@ body main .divider .divider__text {
   font-weight: 500;
   color: hsl(208deg, 49%, 24%);
   display: unset;
+  padding: 0 1rem;
 }
 body main .social {
   display: flex;
@@ -179,4 +188,63 @@ body main .social {
 }
 body main .social .social__icon {
   width: 4rem;
+}
+body aside {
+  display: none;
+}
+
+@media only screen and (min-width: 540px) {
+  body header {
+    width: 42rem;
+    max-width: 50rem;
+  }
+  body header .header__sign-up {
+    font-size: 1.6rem;
+    width: 13.6rem;
+  }
+  body main {
+    width: 42rem;
+    max-width: 50rem;
+  }
+  body main h1 {
+    margin-bottom: 4rem;
+  }
+  body main .form .form__input .input__label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  body main .form .form__input .input__error-message {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  body main .form .form__input .input__icon {
+    width: 1.6rem;
+  }
+  body main .form .form__input .input__area {
+    font-size: 1.6rem;
+  }
+  body main .form .form__input hr {
+    margin-bottom: 2rem;
+  }
+  body main .form .form__input--checkbox {
+    margin-bottom: 2rem;
+  }
+  body main .form .form__input--checkbox .input__checkbox {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  body main .form .form__input--checkbox .input__label--remember {
+    font-size: 2rem;
+  }
+  body main .form .form__submit {
+    height: 5rem;
+    margin: 0 auto 2rem;
+  }
+  body main .form .input__link {
+    font-size: 1.4rem;
+    margin-bottom: 2.6rem;
+  }
+  body main .social .social__icon {
+    width: 4.6rem;
+  }
 }/*# sourceMappingURL=style-login.css.map */
