@@ -18,15 +18,19 @@
     <link rel="stylesheet" href="../assets/styles/style-sign-up.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon-32x32.png" type="image/x-icon">
 
 </head>
 
 <body>
     <header>
-
-        <a href="../index.html"><img src="../assets/images/logo.svg" alt="Logo" class="logo__header"></a>
-
+        <a href="../index.html">
+        <picture>
+                <source media="(min-width: 1019px)" srcset="../assets/images/logo-blue.svg">
+                <img src="../assets/images/logo.svg" alt="illustration logo">
+            </picture>
+        </a>
+            
     </header>
     <main>
 
@@ -81,14 +85,14 @@
 
     </main>
 
-    <!-- <aside class="slider">
+    <aside class="slider">
 
         <section class="slider__slide --one">
 
             <img src="../assets/images/illustration-editor-slide.svg" alt="" class="slide__image --slide-one">
 
             <h2 class="slide__title">Introducing an extensible editor</h2>
-            <p class="slide__copy">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
+            <p class="slide__text">Bloqr features an exceedingly intuitive interface which Iets you focus on one thing:
                 creating content. Extensibility with plugins and themes provide easy ways
                 to add functionality or change the looks of a blog.</p>
 
@@ -98,8 +102,8 @@
 
             <img src="../assets/images/illustration-laptop-slide.svg" alt="" class="slide__image --slide-two">
 
-            <h2 class="sile__title">Free, open, simple</h2>
-            <p class="slide__copy">Blogr is a free and open source application backed by a large
+            <h2 class="slide__title">Free, open, simple</h2>
+            <p class="slide__text">Blogr is a free and open source application backed by a large
                 community of helpful developers. It supports features such as code
                 syntax highlighting, RSS feeds, social media integration, third-party
                 commenting tools, and works seamlessly with Google Analytics</p>
@@ -118,7 +122,7 @@
 
         </div>
 
-    </aside> -->
+    </aside>
 
 </body>
 
