@@ -1,0 +1,80 @@
+@import '../abstract/root';
+
+@media only screen and (min-width: 540px) {
+
+    body {
+        header {
+            width: 42rem;
+            max-width: 50rem;
+
+            .header__sign-up {
+                font-size: $size16;
+                width: 13.6rem;
+            }
+        }
+
+        main{
+            width: 42rem;
+            max-width: 50rem;
+
+            h1 {
+                margin-bottom: 4rem;
+            }
+
+            .form {
+                .form__input {
+
+                    .input__label {
+                        font-size: $size20;
+                        margin-bottom: 1rem;
+                    }
+
+                    .input__error-message {
+                        font-size: $size14;
+                        margin-bottom: .8rem;
+                    }
+
+                    .input__icon {
+                        width: 1.6rem;
+                    }
+
+                    .input__area {
+                        font-size: $size16;
+                    }
+
+                    hr {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .form__input--checkbox {
+                    margin-bottom: 2rem;
+
+                    .input__checkbox {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+
+                    .input__label--remember {
+                        font-size: $size20;
+                    }
+                }
+
+                .form__submit {
+                    height: 5rem;
+                    margin: 0 auto 2rem;
+                }
+
+                .input__link {
+                    font-size: $size14;
+                    margin-bottom: 2.6rem;
+                }
+            }
+            .social {
+                .social__icon {
+                    width: 4.6rem;
+                }
+            }
+        }
+    }
+}

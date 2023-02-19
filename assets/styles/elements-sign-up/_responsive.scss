@@ -1,0 +1,150 @@
+@import '../abstract/root';
+
+@mixin text ($family, $size, $weight, $color, $display) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    display: $display;
+}
+
+@media only screen and (min-width: 1020px) {
+
+    body {
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: unset;
+        background-image: none;
+        padding: unset;
+
+        header {
+            position: absolute;
+            top: 4.2%;
+            left: 4.2%;
+            z-index: 1;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $neutral-white;
+            width: 50%;
+            height: 100vh;
+            max-width: unset;
+            padding: 4.2%;
+
+            h1 {
+                padding: 4rem;
+            }
+
+            .register {
+                .input__label {
+                    font-size: $size20;
+                    margin-bottom: 1rem;
+                }
+
+                .input__error-messega {
+                    font-size: $size14;
+                    margin-bottom: .8rem;
+                }
+
+                .input__icon {
+                    width: 1.6rem;
+                }
+
+                .input__area {
+                    font-size: $size16;
+                }
+
+                .input__password-visibility{
+                    .visibility-icon {
+                        width: 2rem;
+                    }
+                }
+
+                hr {
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .register__submit{
+                    height: 5rem;
+                    border-radius: 2.5rem;
+                    margin: 0 auto 2rem
+                }
+            }
+
+            .lead {
+                font-size: $size14;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .slider {
+            display: block;
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+
+            .slider__slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                // opacity: 0;
+                width: 100%;
+                height: 100%;
+                padding: 5rem;
+                // transition: 2s ease-in-out;
+
+                .slide__title {
+                    @include text($overpass, $size28, $o-w6, $neutral-white, block);
+                }
+
+                .slide__text {
+                    @include text($overpass, $size16, $o-w3, $neutral-white, block);
+                }
+
+            }
+
+            .--one {
+                background-image: linear-gradient(45deg, $gradient-very-light-red 60%, $gradient-light-red);
+            }
+
+            .--two {
+                background-image: linear-gradient(45deg, $gradient-very-dark-desaturated-blue 60%, $gradient-very-dark-gray-blue);
+                display: none;
+            }
+
+            .slide-selection {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 2.6rem;
+                width: 100%;
+
+                .slide-selection__button {
+                    background-color: transparent;
+                    border: none;
+                    align-self: center;
+                    width: 4rem;
+                    height: 4rem;
+
+                    .slide-selection__dot {
+                        color: $neutral-white;
+                    }
+
+                    .slide-selection__dot.active {
+                        color: $neutral-white;
+                    }
+                }
+            }
+        }
+    }
+}
