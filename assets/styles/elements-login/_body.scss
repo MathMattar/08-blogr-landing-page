@@ -9,6 +9,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(to bottom, $gradient-very-light-red, $gradient-light-red );
     width: 100vw;
     height: 100vh;
@@ -20,6 +23,8 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2.4rem;
+        width: 33.5rem;
+        max-width: 42rem;
 
         .header__sign-up {
             @include text($overpass, $size12, $o-w6, $primary-light-red, block);
@@ -34,8 +39,10 @@ body {
 
     main {
         background-color: $neutral-white;
-        padding: 2.6rem 2rem;
+        width: 33.5rem;
+        max-width: 42rem;
         border-radius: 2rem;
+        padding: 2.6rem 2rem;
 
         h1 {
             @include text($ubuntu, $size38, $u-w5, $primary-very-dark-blue, block);
@@ -147,12 +154,13 @@ body {
             margin-bottom: 1.2rem;
 
             .divider__line {
-                width: 13rem;
+                width: 100%;
                 border: 1px solid $neutral-grayish-blue;
             }
 
             .divider__text {
-                @include text($ubuntu, $size16, $u-w5, $primary-very-dark-blue, unset)
+                @include text($ubuntu, $size16, $u-w5, $primary-very-dark-blue, unset);
+                padding: 0 1rem;
             }
         }
 
@@ -166,5 +174,9 @@ body {
                 width: 4rem;
             }
         }
+    }
+
+    aside {
+        display: none;
     }
 }

@@ -9,6 +9,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(to bottom, $gradient-very-light-red, $gradient-light-red);
     width: 100vw;
     height: 100vh;
@@ -16,14 +19,14 @@ body {
 
     header {
         margin-bottom: 2.4rem;
-
-        .header__logo {}
     }
 
     main {
         background-color: $neutral-white;
         padding: 2.6rem 2rem;
         border-radius: 2rem;
+        width: 33.5rem;
+        max-width: 40rem;
 
         h1 {
             @include text($ubuntu, $size38, $u-w5, $primary-very-dark-blue, block);
@@ -32,7 +35,6 @@ body {
         }
 
         .register {
-
             .register__input {
                 display: grid;
                 align-items: center;
@@ -102,9 +104,8 @@ body {
                 border-radius: 2rem;
                 margin: 0 auto 1.2rem;
             }
-
         }
-        
+
         .lead {
             @include text($ubuntu, $size12, $u-w5, $primary-very-dark-blue, block);
             text-decoration: none;
@@ -112,7 +113,7 @@ body {
             margin-bottom: 1.2rem;
         }
 
-        .redirect-login{
+        .redirect-login {
             @include text($overpass, $size20, $o-w6, $neutral-white, block);
             text-transform: uppercase;
             width: 10rem;
@@ -123,4 +124,9 @@ body {
             margin: 0 auto;
         }
     }
+
+    aside {
+        display: none;
+    }
+
 }
