@@ -1,6 +1,6 @@
 const on = document.getElementById("eye--on");
 const off = document.getElementById("eye--off");
-const password = document.getElementById("password");
+const password = document.getElementById("input__password-visibility");
 
 off.addEventListener("click", togglePassword);
 on.addEventListener("click", togglePassword);

@@ -1,11 +1,12 @@
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slider__slide");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
-const dots = document.querySelectorAll(".slide-nav__dot");
+const dots = document.querySelectorAll(".slide-selection__dot");
 
 //Iniciar o slide atual e ativar o primeiro ponto indicador
 let currentSlide = 0;
-dots[currentSlide].classList.add("active");
+dots[currentSlide].classList.add("--active");
+slides[currentSlide].classList.add("--active");
 
 const nextSlide = () => {
   removeActive();
@@ -24,16 +25,16 @@ prevBtn.addEventListener("click", () => {
 });
 
 //Tempo de alternância
-setInterval(nextSlide, 10000);
+setInterval(nextSlide, 10000000);
 
 function removeActive() {
-  slides[currentSlide].classList.remove("active");
+  slides[currentSlide].classList.remove("--active");
   dots[currentSlide].innerHTML = "🞅"; //mudar o elemento identificador
-  dots[currentSlide].classList.remove("active");
+  dots[currentSlide].classList.remove("--active");
 }
 
 function addActive() {
-  slides[currentSlide].classList.add("active");
+  slides[currentSlide].classList.add("--active");
   dots[currentSlide].innerHTML = "⬤"; //mudar o elemento identificador
-  dots[currentSlide].classList.add("active");
+  dots[currentSlide].classList.add("--active");
 }
