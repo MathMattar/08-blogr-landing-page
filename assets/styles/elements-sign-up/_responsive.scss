@@ -59,7 +59,7 @@
                     font-size: $size16;
                 }
 
-                .input__password-visibility{
+                .input__password-visibility {
                     .visibility-icon {
                         width: 2rem;
                     }
@@ -70,7 +70,7 @@
                     margin-bottom: 2rem;
                 }
 
-                .register__submit{
+                .register__submit {
                     height: 5rem;
                     border-radius: 2.5rem;
                     margin: 0 auto 2rem
@@ -94,32 +94,45 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 position: absolute;
                 top: 0;
                 left: 0;
-                // opacity: 0;
                 width: 100%;
                 height: 100%;
-                padding: 5rem;
-                // transition: 2s ease-in-out;
+
+                .slide__image {
+                    height: 44.6rem;
+                }
 
                 .slide__title {
                     @include text($overpass, $size28, $o-w6, $neutral-white, block);
+                    text-align: center;
+                    margin-bottom: 4rem
                 }
 
                 .slide__text {
                     @include text($overpass, $size16, $o-w3, $neutral-white, block);
+                    text-align: center;
+                    line-height: 2.4rem;
+                    letter-spacing: 0.03em;
                 }
 
             }
 
-            .--one {
+            .slide--one {
                 background-image: linear-gradient(45deg, $gradient-very-light-red 60%, $gradient-light-red);
+                display: none;
             }
 
-            .--two {
+            .slide--two {
                 background-image: linear-gradient(45deg, $gradient-very-dark-desaturated-blue 60%, $gradient-very-dark-gray-blue);
                 display: none;
+            }
+
+            .--active {
+                display: flex;
+                opacity: 1;
             }
 
             .slide-selection {
@@ -130,18 +143,21 @@
                 width: 100%;
 
                 .slide-selection__button {
+                    display: flex;
+                    align-items: center;
                     background-color: transparent;
                     border: none;
-                    align-self: center;
                     width: 4rem;
                     height: 4rem;
 
                     .slide-selection__dot {
                         color: $neutral-white;
-                    }
+                        margin: 0 auto;
 
-                    .slide-selection__dot.active {
-                        color: $neutral-white;
+                        &.--active {
+                            color: $neutral-white;
+                            margin: 0 auto;
+                        }
                     }
                 }
             }

@@ -214,12 +214,15 @@ body aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 5rem;
+  }
+  body .slider .slider__slide .slide__image {
+    height: 44.6rem;
   }
   body .slider .slider__slide .slide__title {
     font-family: "Overpass", sans-serif;
@@ -227,6 +230,8 @@ body aside {
     font-weight: 600;
     color: hsl(0deg, 0%, 100%);
     display: block;
+    text-align: center;
+    margin-bottom: 4rem;
   }
   body .slider .slider__slide .slide__text {
     font-family: "Overpass", sans-serif;
@@ -234,13 +239,21 @@ body aside {
     font-weight: 300;
     color: hsl(0deg, 0%, 100%);
     display: block;
+    text-align: center;
+    line-height: 2.4rem;
+    letter-spacing: 0.03em;
   }
-  body .slider .--one {
+  body .slider .slide--one {
     background-image: linear-gradient(45deg, hsl(13deg, 100%, 72%) 60%, hsl(353deg, 100%, 62%));
+    display: none;
   }
-  body .slider .--two {
+  body .slider .slide--two {
     background-image: linear-gradient(45deg, hsl(237deg, 23%, 32%) 60%, hsl(237deg, 17%, 21%));
     display: none;
+  }
+  body .slider .--active {
+    display: flex;
+    opacity: 1;
   }
   body .slider .slide-selection {
     display: flex;
@@ -250,16 +263,19 @@ body aside {
     width: 100%;
   }
   body .slider .slide-selection .slide-selection__button {
+    display: flex;
+    align-items: center;
     background-color: transparent;
     border: none;
-    align-self: center;
     width: 4rem;
     height: 4rem;
   }
   body .slider .slide-selection .slide-selection__button .slide-selection__dot {
     color: hsl(0deg, 0%, 100%);
+    margin: 0 auto;
   }
-  body .slider .slide-selection .slide-selection__button .slide-selection__dot.active {
+  body .slider .slide-selection .slide-selection__button .slide-selection__dot.--active {
     color: hsl(0deg, 0%, 100%);
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style-sign-up.css.map */
