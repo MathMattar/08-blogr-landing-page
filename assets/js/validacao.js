@@ -7,7 +7,7 @@ export default function checkInputs(input) {
     }
   });
 
-  const messageError = input.parentNode.querySelector(".error-message");
+  const messageError = input.parentNode.querySelector(".input__error-message");
   const inputValidator = input.checkValidity();
 
   if (!inputValidator) {

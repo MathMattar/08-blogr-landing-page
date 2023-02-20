@@ -66,6 +66,7 @@ body {
                 }
 
                 .input__error-message {
+                    grid-column: 1/4;
                     grid-row: 2/2;
                     @include text($ubuntu, $size12, $u-w7, $primary-light-red, unset);
                     margin-bottom: .3rem;

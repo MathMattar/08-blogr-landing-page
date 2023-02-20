@@ -74,6 +74,7 @@ body main .form .form__input .input__label {
   margin-bottom: 0.6rem;
 }
 body main .form .form__input .input__error-message {
+  grid-column: 1/4;
   grid-row: 2/2;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2rem;
