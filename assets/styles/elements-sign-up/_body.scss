@@ -78,11 +78,23 @@ body {
                 background-color: transparent;
                 border: none;
                 padding: unset;
-
             }
 
             .visibility-icon {
                 width: 1.6rem;
+            }
+
+            .visibility-icon--hidden{
+                display: none;
+                width: 1.6rem;
+            }
+            
+            .--exposed{
+                display: block;
+            }
+
+            .--hidden {
+                display: none;
             }
 
             hr {

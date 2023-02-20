@@ -93,12 +93,24 @@ body {
                     grid-row: 3/3;
                     background-color: transparent;
                     border: none;
-                    padding: unset;
-
+                    padding: unset;    
                 }
 
                 .visibility-icon {
                     width: 1.6rem;
+                }
+
+                .visibility-icon--hidden {
+                    width: 1.6rem;
+                    display: none;
+                }
+
+                .--exposed{
+                    display: block;
+                }
+
+                .--hidden {
+                    display: none;
                 }
 
                 hr {

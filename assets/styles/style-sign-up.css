@@ -94,6 +94,16 @@ body main .register .input__password-visibility {
 body main .register .visibility-icon {
   width: 1.6rem;
 }
+body main .register .visibility-icon--hidden {
+  display: none;
+  width: 1.6rem;
+}
+body main .register .--exposed {
+  display: block;
+}
+body main .register .--hidden {
+  display: none;
+}
 body main .register hr {
   grid-column: 1/4;
   grid-row: 4/4;

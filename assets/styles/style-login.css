@@ -113,6 +113,16 @@ body main .form .form__input .input__password-visibility {
 body main .form .form__input .visibility-icon {
   width: 1.6rem;
 }
+body main .form .form__input .visibility-icon--hidden {
+  width: 1.6rem;
+  display: none;
+}
+body main .form .form__input .--exposed {
+  display: block;
+}
+body main .form .form__input .--hidden {
+  display: none;
+}
 body main .form .form__input hr {
   grid-column: 1/4;
   grid-row: 4/4;

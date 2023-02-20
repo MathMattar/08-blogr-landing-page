@@ -1,19 +1,13 @@
-const on = document.getElementById("eye--on");
-const off = document.getElementById("eye--off");
-const password = document.getElementById("input__password-visibility");
+const inputPassword = document.getElementById("password");
+const buttonPassword = document.getElementById("password-toggle");
+const iconHidden = document.getElementById("hidden");
+const iconExposed = document.getElementById("exposed");
 
-off.addEventListener("click", togglePassword);
-on.addEventListener("click", togglePassword);
+iconHidden.addEventListener("click", changeIcon);
+iconExposed.addEventListener("click", changeIcon);
 
-function togglePassword() {
-
-  //Altera a exibição dos botões, alternando os valores diretamente
-  on.style.display = off.style.display;
-  off.style.display = on.style.display;
-
-  //Operador ternário responsável por verificar e definir o tipo atual do input e alterar entre "password" e "text"
-  password.setAttribute(
-    "type",
-    password.getAttribute("type") === "password" ? "text" : "password"
-  );
+function changeIcon() {
+    iconHidden.classList.toggle("--hidden");
+    iconExposed.classList.toggle("--exposed");
+    password.setAttribute("type", password.getAttribute("type") === "password" ? "text" : "password");
 }
