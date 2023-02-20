@@ -136,21 +136,23 @@
 
                         .dropdown__icon {
                             display: none;
-                        }
 
-                        &.--rotate {
-                            transform: rotate(180deg);
-                            transition: .5s;
+                            &.--rotate {
+                                transform: rotate(180deg);
+                                transition: .5s;
+                            }
                         }
 
                         .dropdown__icon--dark {
                             margin-left: .7rem;
+
+                            &.--rotate {
+                                transform: rotate(180deg);
+                                transition: .5s;
+                            }
                         }
 
-                        &.--rotate {
-                            transform: rotate(180deg);
-                            transition: .5s;
-                        }
+
                     }
 
                     .dropdown__list {

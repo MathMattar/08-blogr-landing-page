@@ -103,14 +103,14 @@ html {
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon {
   display: none;
 }
-.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link.--rotate {
+.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon.--rotate {
   transform: rotate(180deg);
   transition: 0.5s;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon--dark {
   margin-left: 0.7rem;
 }
-.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link.--rotate {
+.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon--dark.--rotate {
   transform: rotate(180deg);
   transition: 0.5s;
 }
