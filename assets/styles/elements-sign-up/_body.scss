@@ -70,7 +70,7 @@ body {
                 background: transparent;
                 border: none;
 
-                &:focus{
+                &:focus {
                     outline: none;
                 }
             }
@@ -89,12 +89,12 @@ body {
                 width: 1.6rem;
             }
 
-            .visibility-icon--hidden{
+            .visibility-icon--hidden {
                 display: none;
                 width: 1.6rem;
             }
-            
-            .--exposed{
+
+            .--exposed {
                 display: block;
             }
 
@@ -120,10 +120,13 @@ body {
                 border: none;
                 border-radius: 2rem;
                 margin: 0 auto 1.2rem;
+                cursor: pointer;
 
                 &:hover {
-                    transform: scale(1.1);
-                    transition: 1s
+                    background-image: none;
+                    background-color: transparent;
+                    border: 3px solid $gradient-very-dark-gray-blue;
+                    color: $gradient-very-dark-gray-blue;
                 }
             }
         }
@@ -144,10 +147,13 @@ body {
             border: none;
             border-radius: 2rem;
             margin: 0 auto;
+            cursor: pointer;
 
             &:hover {
-                transform: scale(1.1);
-                transition: 1s
+                background-image: none;
+                background-color: transparent;
+                border: 3px solid $gradient-light-red;
+                color: $gradient-light-red;
             }
         }
     }

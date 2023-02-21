@@ -129,10 +129,13 @@ body main .register .register__submit {
   border: none;
   border-radius: 2rem;
   margin: 0 auto 1.2rem;
+  cursor: pointer;
 }
 body main .register .register__submit:hover {
-  transform: scale(1.1);
-  transition: 1s;
+  background-image: none;
+  background-color: transparent;
+  border: 3px solid hsl(237deg, 17%, 21%);
+  color: hsl(237deg, 17%, 21%);
 }
 body main .lead {
   font-family: "Ubuntu", sans-serif;
@@ -157,10 +160,13 @@ body main .redirect-login {
   border: none;
   border-radius: 2rem;
   margin: 0 auto;
+  cursor: pointer;
 }
 body main .redirect-login:hover {
-  transform: scale(1.1);
-  transition: 1s;
+  background-image: none;
+  background-color: transparent;
+  border: 3px solid hsl(353deg, 100%, 62%);
+  color: hsl(353deg, 100%, 62%);
 }
 body aside {
   display: none;
@@ -281,7 +287,7 @@ body aside {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 2.6rem;
+    bottom: 1.3rem;
     width: 100%;
   }
   body .slider .slide-selection .slide-selection__button {
@@ -291,6 +297,7 @@ body aside {
     border: none;
     width: 4rem;
     height: 4rem;
+    cursor: pointer;
   }
   body .slider .slide-selection .slide-selection__button .slide-selection__dot {
     color: hsl(0deg, 0%, 100%);

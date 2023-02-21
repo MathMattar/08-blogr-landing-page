@@ -139,7 +139,7 @@
                 display: flex;
                 justify-content: center;
                 position: absolute;
-                bottom: 2.6rem;
+                bottom: 1.3rem;
                 width: 100%;
 
                 .slide-selection__button {
@@ -149,6 +149,7 @@
                     border: none;
                     width: 4rem;
                     height: 4rem;
+                    cursor: pointer;
 
                     .slide-selection__dot {
                         color: $neutral-white;

@@ -34,9 +34,11 @@ body {
             width: 8rem;
             height: 4rem;
             text-transform: uppercase;
+            cursor: pointer;
 
             &:hover {
-                background-color: $primary-very-light-red;
+                background-color: transparent;
+                border: 2px solid $neutral-white;
                 color: $neutral-white;
             }
         }
@@ -104,6 +106,7 @@ body {
                     background-color: transparent;
                     border: none;
                     padding: unset;
+                    cursor: pointer;
                 }
 
                 .visibility-icon {
@@ -142,11 +145,12 @@ body {
                 .input__checkbox {
                     width: 1.2rem;
                     height: 1.2rem;
+                    cursor: pointer;
                 }
 
                 .input__label--remember {
                     @include text($ubuntu, $size14, $u-w5, $primary-very-dark-blue, unset);
-
+                    cursor: pointer;
                 }
             }
 
@@ -160,10 +164,13 @@ body {
                 border: none;
                 border-radius: 2rem;
                 margin: 0 auto 1.2rem;
+                cursor: pointer;
 
                 &:hover {
-                    transform: scale(1.1);
-                    transition: 1s
+                    background-image: none;
+                    background-color: transparent;
+                    border: 3px solid $gradient-very-dark-gray-blue;
+                    color: $gradient-very-dark-gray-blue;
                 }
             }
 
@@ -199,6 +206,7 @@ body {
 
             .social__icon {
                 width: 4rem;
+                cursor: pointer;
 
                 &:hover {
                     transform: scale(1.1);

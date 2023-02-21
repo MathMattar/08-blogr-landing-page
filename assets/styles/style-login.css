@@ -40,9 +40,11 @@ body header .header__sign-up {
   width: 8rem;
   height: 4rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 body header .header__sign-up:hover {
-  background-color: hsl(355deg, 100%, 74%);
+  background-color: transparent;
+  border: 2px solid hsl(0deg, 0%, 100%);
   color: hsl(0deg, 0%, 100%);
 }
 body main {
@@ -117,6 +119,7 @@ body main .form .form__input .input__password-visibility {
   background-color: transparent;
   border: none;
   padding: unset;
+  cursor: pointer;
 }
 body main .form .form__input .visibility-icon {
   width: 1.6rem;
@@ -148,6 +151,7 @@ body main .form .form__input--checkbox {
 body main .form .form__input--checkbox .input__checkbox {
   width: 1.2rem;
   height: 1.2rem;
+  cursor: pointer;
 }
 body main .form .form__input--checkbox .input__label--remember {
   font-family: "Ubuntu", sans-serif;
@@ -155,6 +159,7 @@ body main .form .form__input--checkbox .input__label--remember {
   font-weight: 500;
   color: hsl(208deg, 49%, 24%);
   display: unset;
+  cursor: pointer;
 }
 body main .form .form__submit {
   font-family: "Ubuntu", sans-serif;
@@ -170,10 +175,13 @@ body main .form .form__submit {
   border: none;
   border-radius: 2rem;
   margin: 0 auto 1.2rem;
+  cursor: pointer;
 }
 body main .form .form__submit:hover {
-  transform: scale(1.1);
-  transition: 1s;
+  background-image: none;
+  background-color: transparent;
+  border: 3px solid hsl(237deg, 17%, 21%);
+  color: hsl(237deg, 17%, 21%);
 }
 body main .form .input__link {
   font-family: "Ubuntu", sans-serif;
@@ -210,6 +218,7 @@ body main .social {
 }
 body main .social .social__icon {
   width: 4rem;
+  cursor: pointer;
 }
 body main .social .social__icon:hover {
   transform: scale(1.1);
