@@ -142,7 +142,7 @@ $calc-nav-bar-footer: $width-logo-footer + $margin-logo-footer;
 
     .header__background {
         background-image: url(../images/bg-pattern-intro-desktop.svg);
-        background-position: -43.5rem 135.5rem;
+        background-position: calc(100% -130rem) calc(100% - -122rem);
 
         .header__nav-bar {
             .nav-bar {
