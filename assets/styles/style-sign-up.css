@@ -81,6 +81,9 @@ body main .register .input__area {
   background: transparent;
   border: none;
 }
+body main .register .input__area:focus {
+  outline: none;
+}
 body main .register .input__password-visibility {
   width: -moz-fit-content;
   width: fit-content;

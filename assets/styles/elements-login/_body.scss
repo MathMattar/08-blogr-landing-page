@@ -90,6 +90,10 @@ body {
                     @include text ($ubuntu, $size14, $u-w5, $primary-very-dark-blue, unset);
                     background: transparent;
                     border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
                 }
 
                 .input__password-visibility {

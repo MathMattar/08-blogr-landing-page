@@ -104,6 +104,9 @@ body main .form .form__input .input__area {
   background: transparent;
   border: none;
 }
+body main .form .form__input .input__area:focus {
+  outline: none;
+}
 body main .form .form__input .input__password-visibility {
   width: -moz-fit-content;
   width: fit-content;
