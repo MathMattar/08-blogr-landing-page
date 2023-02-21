@@ -25,12 +25,12 @@
 <body>
     <header>
         <a href="../index.html">
-        <picture>
+            <picture>
                 <source media="(min-width: 1019px)" srcset="../assets/images/logo-blue.svg">
                 <img src="../assets/images/logo.svg" alt="illustration logo">
             </picture>
         </a>
-            
+
     </header>
     <main>
 
@@ -42,7 +42,7 @@
                 <label for="name" class="input__label">Name</label>
                 <span class="input__error-message"></span>
                 <img src="../assets/images/icon-user.svg" alt="Icon User" class="input__icon">
-                <input type="text" id="name" class="input__area" name="name" placeholder="Full name" required>
+                <input type="text" id="name" class="input__area" name="name" placeholder="Full name" minlength="3" maxlength="60" required>
 
                 <hr>
             </fieldset>
@@ -52,7 +52,7 @@
                 <span class="input__error-message"></span>
                 <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="input__icon">
                 <input type="email" id="email" class="input__area" name="email" placeholder="Email address"
-                    minlength="3" required>
+                    minlength="3" pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required>
 
                 <hr>
             </fieldset>
@@ -65,8 +65,10 @@
                     minlength="8" maxlength="20" pattern="" required>
 
                 <button id="eye--on" class="input__password-visibility" type="button">
-                    <img src="../assets/images/icon-eye-off.svg" alt="Open eye with a 45 degree line" class="visibility-icon" id="hidden">
-                    <img src="../assets/images/icon-eye.svg" alt="Open eye" class="visibility-icon--hidden" id="exposed">
+                    <img src="../assets/images/icon-eye-off.svg" alt="Open eye with a 45 degree line"
+                        class="visibility-icon" id="hidden">
+                    <img src="../assets/images/icon-eye.svg" alt="Open eye" class="visibility-icon--hidden"
+                        id="exposed">
                 </button>
 
                 <hr>
@@ -78,7 +80,7 @@
 
         <p class="lead">Already have an account?</p>
 
-        <button class="redirect-login">Login</button>
+        <button class="redirect-login" id="redirect">Login</button>
 
     </main>
 
@@ -123,7 +125,7 @@
 
     <script src="../assets/js/password.js"></script>
     <script src="../assets/js/slide.js"></script>
-    <script src="../assets/js/validacaoSignUp.js" type="module"></script>
+    <script src="../assets/js/validacaoSignUp.js"></script>
 
 </body>
 

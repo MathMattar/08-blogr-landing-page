@@ -25,7 +25,7 @@
 <body>
     <header>
         <a href="../index.html"><img src="../assets/images/logo.svg" alt="Logo" class="header__logo"></a>
-        <button class="header__sign-up">Sign up</button>
+        <button class="header__sign-up" id="redirect">Sign up</button>
     </header>
     <main>
         <h1>Login</h1>
@@ -38,7 +38,7 @@
                 <span class="input__error-message"></span>
                 <img src="../assets/images/icon-user.svg" alt="User" class="input__icon">
                 <input type="email" id="email" class="input__area" name="email" placeholder="Email address or username"
-                    minlength="3" required>
+                    minlength="3" pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required>
 
                 <hr>
 
@@ -49,11 +49,14 @@
                 <label for="password" class="input__label">Password</label>
                 <span class="input__error-message"></span>
                 <img src="../assets/images/icon-lock.svg" alt="Lock" class="input__icon">
-                <input type="password" id="password" class="input__area" name="password" placeholder="Password" minlength="10" maxlength="20" required>
+                <input type="password" id="password" class="input__area" name="password" placeholder="Password"
+                    minlength="10" maxlength="32" required>
 
                 <button class="input__password-visibility" type="button" id="password-toggle">
-                    <img src="../assets/images/icon-eye-off.svg" alt="Open eye with a 45 degree line" class="visibility-icon" id="hidden">
-                    <img src="../assets/images/icon-eye.svg" alt="Open eye" class="visibility-icon--hidden" id="exposed">
+                    <img src="../assets/images/icon-eye-off.svg" alt="Open eye with a 45 degree line"
+                        class="visibility-icon" id="hidden">
+                    <img src="../assets/images/icon-eye.svg" alt="Open eye" class="visibility-icon--hidden"
+                        id="exposed">
                 </button>
 
                 <hr>
@@ -90,7 +93,7 @@
     </main>
 
     <script src="../assets/js/password.js"></script>
-    <script src="../assets/js/validacaoLogin.js" type="module"></script>
+    <script src="../assets/js/validacaoLogin.js"></script>
 
 </body>
 
