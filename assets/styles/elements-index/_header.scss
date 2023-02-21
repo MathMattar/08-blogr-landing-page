@@ -130,9 +130,15 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        @include text ($overpass, 1.8rem, $o-w6, normal, normal, $neutral-very-dark-black-blue, center);
+                        @include text ($ubuntu, 1.8rem, $u-w7, normal, normal, $neutral-very-dark-black-blue, center);
+                        opacity: .75;
                         text-decoration: none;
                         margin-bottom: 3rem;
+
+                        &:hover {
+                            opacity: 1;
+                            text-decoration: underline;
+                        }
 
                         .dropdown__icon {
                             display: none;
@@ -169,10 +175,13 @@
                         }
 
                         .dropdown__item {
-                            @include text ($overpass, $size16, $o-w6, normal, normal, $neutral-very-dark-grayish-blue, center);
+                            @include text ($ubuntu, $size16, $u-w4, -0.02em, normal, $neutral-very-dark-grayish-blue, center);
                             text-decoration: none;
                             display: block;
-                            // margin: 1rem 0 1rem;
+
+                            &:hover {
+                                font-weight: $u-w7;
+                            }
                         }
                     }
                 }
@@ -203,6 +212,14 @@
                         @include text($ubuntu, $size16, $u-w5, 0.02rem, normal, $neutral-white, center);
                         text-decoration: none;
                     }
+
+                    &:hover {
+                        background-color: $primary-very-light-red;
+
+                        .user__redirect--sign-up {
+                            color: $neutral-white;
+                        }
+                    }
                 }
             }
         }
@@ -230,11 +247,23 @@
 
     .action__btn--start {
         @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $gradient-light-red, $neutral-white, none, 2.2rem, 13.6rem, 4.74rem);
-        margin-right: .8rem
+        margin-right: .8rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $primary-very-light-red;
+            color: $neutral-white;
+        }
     }
 
     .action__btn--learn {
         @include button-action ($ubuntu, $size16, $u-w5, 0.02em, $neutral-white, transparent, 1px solid $neutral-white, 2.2rem, 13.6rem, 4.74rem);
         margin-left: .8rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $neutral-white;
+            color: $primary-very-light-red;
+        }
     }
 }

@@ -127,6 +127,10 @@ body main .register .register__submit {
   border-radius: 2rem;
   margin: 0 auto 1.2rem;
 }
+body main .register .register__submit:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 body main .lead {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2rem;
@@ -150,6 +154,10 @@ body main .redirect-login {
   border: none;
   border-radius: 2rem;
   margin: 0 auto;
+}
+body main .redirect-login:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 body aside {
   display: none;

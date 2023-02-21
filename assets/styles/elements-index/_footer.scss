@@ -37,10 +37,19 @@
             .nav__item--main {
                 @include item($ubuntu, $size20, $u-w5, -0.05em, $neutral-white, center, block);
                 margin-bottom: 2rem;
+
+                &:hover{
+                    text-decoration: underline
+                }
             }
 
             .nav__item {
                 @include item($ubuntu, $size20, $u-w4, -0.06em, $neutral-white, center, unset);
+                opacity: .75;
+
+                &:hover{
+                    text-decoration: underline
+                }
             }
         }
     }

@@ -41,6 +41,10 @@ body header .header__sign-up {
   height: 4rem;
   text-transform: uppercase;
 }
+body header .header__sign-up:hover {
+  background-color: hsl(355deg, 100%, 74%);
+  color: hsl(0deg, 0%, 100%);
+}
 body main {
   background-color: hsl(0deg, 0%, 100%);
   width: 33.5rem;
@@ -164,6 +168,10 @@ body main .form .form__submit {
   border-radius: 2rem;
   margin: 0 auto 1.2rem;
 }
+body main .form .form__submit:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 body main .form .input__link {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2rem;
@@ -200,8 +208,9 @@ body main .social {
 body main .social .social__icon {
   width: 4rem;
 }
-body aside {
-  display: none;
+body main .social .social__icon:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 @media only screen and (min-width: 540px) {

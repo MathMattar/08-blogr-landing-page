@@ -122,16 +122,30 @@ $calc-nav-bar-footer: $width-logo-footer + $margin-logo-footer;
 
         }
     }
+
+    .footer {
+        .footer__nav {
+            .nav__list {
+                .nav__item--main {
+                    text-align: left;
+                }
+
+                .nav__item {
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1360px) {
 
     .header__background {
+        background-image: url(../images/bg-pattern-intro-desktop.svg);
+        background-position: -43.5rem 135.5rem;
 
         .header__nav-bar {
-
             .nav-bar {
-
                 .menu-dropdown {
                     gap: 3rem;
                 }

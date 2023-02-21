@@ -90,15 +90,20 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Overpass", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: normal;
   line-height: normal;
   color: hsl(240deg, 10%, 16%);
   text-align: center;
+  opacity: 0.75;
   text-decoration: none;
   margin-bottom: 3rem;
+}
+.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__link .dropdown__icon {
   display: none;
@@ -127,15 +132,18 @@ html {
   display: flex;
 }
 .header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list .dropdown__item {
-  font-family: "Overpass", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: normal;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   line-height: normal;
   color: hsl(206deg, 13%, 34%);
   text-align: center;
   text-decoration: none;
   display: block;
+}
+.header__background .header__nav-bar .nav-bar .menu-dropdown .dropdown__container .dropdown__list .dropdown__item:hover {
+  font-weight: 700;
 }
 .header__background .header__nav-bar .nav-bar hr {
   width: 100%;
@@ -173,6 +181,12 @@ html {
   color: hsl(0deg, 0%, 100%);
   text-align: center;
   text-decoration: none;
+}
+.header__background .header__nav-bar .nav-bar .nav-bar__user .user__button:hover {
+  background-color: hsl(355deg, 100%, 74%);
+}
+.header__background .header__nav-bar .nav-bar .nav-bar__user .user__button:hover .user__redirect--sign-up {
+  color: hsl(0deg, 0%, 100%);
 }
 
 .action {
@@ -215,6 +229,11 @@ html {
   width: 13.6rem;
   height: 4.74rem;
   margin-right: 0.8rem;
+  cursor: pointer;
+}
+.action .action__btn--start:hover {
+  background-color: hsl(355deg, 100%, 74%);
+  color: hsl(0deg, 0%, 100%);
 }
 .action .action__btn--learn {
   font-family: "Ubuntu", sans-serif;
@@ -228,6 +247,11 @@ html {
   width: 13.6rem;
   height: 4.74rem;
   margin-left: 0.8rem;
+  cursor: pointer;
+}
+.action .action__btn--learn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(355deg, 100%, 74%);
 }
 
 main .first {
@@ -416,6 +440,9 @@ main .third .copy .copy__area .copy__text {
   display: block;
   margin-bottom: 2rem;
 }
+.footer .footer__nav .nav__list .nav__item--main:hover {
+  text-decoration: underline;
+}
 .footer .footer__nav .nav__list .nav__item {
   font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
@@ -424,6 +451,10 @@ main .third .copy .copy__area .copy__text {
   color: hsl(0deg, 0%, 100%);
   text-align: center;
   display: unset;
+  opacity: 0.75;
+}
+.footer .footer__nav .nav__list .nav__item:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 1020px) {
@@ -508,8 +539,18 @@ main .third .copy .copy__area .copy__text {
   .header__background .header__nav-bar .nav-bar .nav-bar__user .user__button .user__redirect--sign-up {
     color: hsl(356deg, 100%, 66%);
   }
+  .footer .footer__nav .nav__list .nav__item--main {
+    text-align: left;
+  }
+  .footer .footer__nav .nav__list .nav__item {
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 1360px) {
+  .header__background {
+    background-image: url(../images/bg-pattern-intro-desktop.svg);
+    background-position: -43.5rem 135.5rem;
+  }
   .header__background .header__nav-bar .nav-bar .menu-dropdown {
     gap: 3rem;
   }

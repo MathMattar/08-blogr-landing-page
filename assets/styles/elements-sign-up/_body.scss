@@ -116,6 +116,11 @@ body {
                 border: none;
                 border-radius: 2rem;
                 margin: 0 auto 1.2rem;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 1s
+                }
             }
         }
 
@@ -135,6 +140,11 @@ body {
             border: none;
             border-radius: 2rem;
             margin: 0 auto;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 1s
+            }
         }
     }
 

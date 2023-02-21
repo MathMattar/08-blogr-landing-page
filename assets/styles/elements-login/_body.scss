@@ -34,6 +34,11 @@ body {
             width: 8rem;
             height: 4rem;
             text-transform: uppercase;
+
+            &:hover {
+                background-color: $primary-very-light-red;
+                color: $neutral-white;
+            }
         }
     }
 
@@ -94,7 +99,7 @@ body {
                     grid-row: 3/3;
                     background-color: transparent;
                     border: none;
-                    padding: unset;    
+                    padding: unset;
                 }
 
                 .visibility-icon {
@@ -106,7 +111,7 @@ body {
                     display: none;
                 }
 
-                .--exposed{
+                .--exposed {
                     display: block;
                 }
 
@@ -151,6 +156,11 @@ body {
                 border: none;
                 border-radius: 2rem;
                 margin: 0 auto 1.2rem;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 1s
+                }
             }
 
             .input__link {
@@ -185,11 +195,12 @@ body {
 
             .social__icon {
                 width: 4rem;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 1s
+                }
             }
         }
-    }
-
-    aside {
-        display: none;
     }
 }
