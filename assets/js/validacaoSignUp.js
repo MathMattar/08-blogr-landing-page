@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll("[required]");
 // Evento blur para verificar o input e invalid para impedir o comportamento padrão do navegador
 inputs.forEach((input) => {
   input.addEventListener("blur", () => checkInputs(input));
-  input.addEventListener("invalid", (e) => e.preventDefault());
+  input.addEventListener("invalid", (evento) => evento.preventDefault());
 });
 
 // Tipos de erros e mensagens correspondentes
@@ -48,12 +48,10 @@ function checkInputs(input) {
   } else {
     messageError.textContent = "";
   }
-
-  console.log(input.validity);
 }
 
 // Seleciona o formulário, adiciona o evento de envio e salva no localStorage
-const form = document.querySelector("[data-form]");
+const form = document.getElementById("form-register");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -64,9 +62,9 @@ form.addEventListener("submit", (e) => {
     password: e.target["password"].value,
   };
 
-  localStorage.setItem("Sign Up", JSON.stringify(answers));
+  localStorage.setItem("Sign", JSON.stringify(answers));
 
-  location.reload();
+  form.reset();
 });
 
 // Evento de clique para redirecionar a página
@@ -75,4 +73,3 @@ const redirect = document.getElementById("redirect");
 redirect.addEventListener("click", () => {
   window.location.href = "./login.html";
 });
-

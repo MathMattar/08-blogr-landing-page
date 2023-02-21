@@ -77,7 +77,7 @@ form.addEventListener("submit", (e) => {
 
   localStorage.setItem("Login", JSON.stringify(answers));
 
-  location.reload();
+  form.reset();
 });
 
 // Evento de clique para redirecionar a página
