@@ -35,108 +35,32 @@ Os usuários devem ser capazes de:
 
 <br>
 
-### **Página principal**
+## Página principal
 
-<br>
+-  **Mobile**
 
-#### **Mobile**
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
+<div style="display: flex; justify-content: center; align-items: center;">
+<p style="display:inline; margin: 20px">
     <img width="375px" src="./assets/presentation/mobile.png"></img>
 </p>
-</div>
-
-<br>
-
-### **Tablet**
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="768px" src="./assets/presentation/tablet-menu-active.png"></img>
+<p style="display:inline; margin: 20px">
+    <img width="375px" src="./assets/presentation/mobile-menu-active.png"></img>
 </p>
 </div>
 
 <br>
 
-### **Desktop**
+- **Desktop**
 
 <div style="text-align:center">
-<p style="display:inline; margin: 10px">
+<p style="display:inline; margin: 20px">
     <img width="1440px" src="./assets/presentation/desktop-active.png"></img>
+<p style="display:inline; margin: 20px">
+    <img width="1440px" src="./assets/presentation/desktop-menu-active.png"></img>
 </p>
 </div>
 
 <br>
-
-### Login
-
-#### **Mobile**
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="375px" src="./assets/presentation/login-mobile.png"></img>
-</p>
-</div>
-
-<br>
-
-#### **Tablet**
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="768px" src="./assets/presentation/login-tablet-active.png"></img>
-</p>
-</div>
-
-<br>
-
-#### **Desktop**
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="1440px" src="./assets/presentation/login-desktop.png"></img>
-</p>
-</div>
-
-<br>
-
-### Sign Up
-
-<br>
-
-#### **Mobile**
-
-<br>
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="375px" src="./assets/presentation/sign-up-mobile-active.png"></img>
-</p>
-</div>
-
-<br>
-
-#### **Tablet**
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="768px" src="./assets/presentation/sign-up-tablet.png"></img>
-</p>
-</div>
-
-<br>
-
-### **Desktop**
-
-<div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="1440px" src="./assets/presentation/sign-up-desktop.png"></img>
-</p>
-</div>
-
-<br>
-
 
 ## Links
 
