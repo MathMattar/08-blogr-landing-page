@@ -36,14 +36,13 @@
 
         <h1>Create account</h1>
 
-        <form class="register" id="form-register">
+        <form class="register" id="form-register" data-sign-up>
 
             <fieldset class="register__input">
                 <label for="name" class="input__label">Name</label>
                 <span class="input__error-message"></span>
                 <img src="../assets/images/icon-user.svg" alt="Icon User" class="input__icon">
                 <input type="text" id="name" class="input__area" name="name" placeholder="Full name" minlength="3" maxlength="60" required>
-
                 <hr>
             </fieldset>
 
@@ -53,7 +52,6 @@
                 <img src="../assets/images/icon-email.svg" alt="Icon Envelope" class="input__icon">
                 <input type="email" id="email" class="input__area" name="email" placeholder="Email address"
                     minlength="3" pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required>
-
                 <hr>
             </fieldset>
 
@@ -70,7 +68,6 @@
                     <img src="../assets/images/icon-eye.svg" alt="Open eye" class="visibility-icon--hidden"
                         id="exposed">
                 </button>
-
                 <hr>
             </fieldset>
 
