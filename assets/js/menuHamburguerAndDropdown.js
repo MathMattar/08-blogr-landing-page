@@ -2,7 +2,7 @@ const iconMenu = document.getElementById("icon-menu");
 const iconCloseMenu = document.getElementById("icon-close");
 const navBar = document.getElementById("nav-bar");
 
-// Exibir menu sandwich
+// Exibir menu hamburguer
 iconMenu.addEventListener("click", changeVisibility);
 iconCloseMenu.addEventListener("click", changeVisibility);
 
@@ -49,7 +49,6 @@ dropdownLinks.forEach((dropdownLink) => {
 
 // Evento de clique no corpo da página para fechar a lista e/ou o menu
 document.body.addEventListener("click", (event) => {
-  
   // Verifica onde foi o clique
   const dropdownList = event.target.closest(".dropdown__list");
   const dropdownLink = event.target.closest(".dropdown__link");
@@ -61,7 +60,6 @@ document.body.addEventListener("click", (event) => {
     !event.target.closest("#icon-menu")
   ) {
     dropdownLinks.forEach((link) => {
-      
       if (link.classList.contains("--active")) {
         const activeList = link.nextElementSibling;
         const activeArrowLight = link.querySelector(".dropdown__icon");

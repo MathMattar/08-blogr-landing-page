@@ -25,7 +25,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 //Tempo de alternância
-setInterval(nextSlide, 10000000);
+setInterval(nextSlide, 10000);
 
 function removeActive() {
   slides[currentSlide].classList.remove("--active");
