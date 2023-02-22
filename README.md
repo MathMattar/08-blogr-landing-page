@@ -33,17 +33,13 @@ Os usuários devem ser capazes de:
 
 ## Screenshot
 
-<br>
-
-## Página principal
-
 -  **Mobile**
 
 <div style="display: flex; justify-content: center; align-items: center;">
-<p style="display:inline; margin: 20px">
+<p style="display:inline; margin: 5px">
     <img width="375px" src="./assets/presentation/mobile.png"></img>
 </p>
-<p style="display:inline; margin: 20px">
+<p style="display:inline; margin: 5px">
     <img width="375px" src="./assets/presentation/mobile-menu-active.png"></img>
 </p>
 </div>
