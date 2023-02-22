@@ -45,12 +45,6 @@ Os usuários devem ser capazes de:
 <p style="display:inline; margin: 10px">
     <img width="375px" src="./assets/presentation/mobile.png"></img>
 </p>
-<p style="display:inline; margin: 10px">
-    <img width="375px" src="./assets/presentation/mobile-active.png"></img>
-</p>
-<p style="display:inline; margin: 10px">
-    <img width="375px" src="./assets/presentation/mobile-menu-active.png"></img>
-</p>
 </div>
 
 <br>
@@ -58,12 +52,6 @@ Os usuários devem ser capazes de:
 ### **Tablet**
 
 <div style="text-align:center">
-<p style="display:inline; margin: 10px">
-    <img width="768px" src="./assets/presentation/tablet.png"></img>
-</p>
-<p style="display:inline; margin: 10px">
-    <img width="768px" src="./assets/presentation/tablet-active.png"></img>
-</p>
 <p style="display:inline; margin: 10px">
     <img width="768px" src="./assets/presentation/tablet-menu-active.png"></img>
 </p>
@@ -75,13 +63,7 @@ Os usuários devem ser capazes de:
 
 <div style="text-align:center">
 <p style="display:inline; margin: 10px">
-    <img width="1440px" src="./assets/presentation/desktop.png"></img>
-</p>
-<p style="display:inline; margin: 10px">
     <img width="1440px" src="./assets/presentation/desktop-active.png"></img>
-</p>
-<p style="display:inline; margin: 10px">
-    <img width="1440px" src="./assets/presentation/desktop-menu-active.png"></img>
 </p>
 </div>
 
@@ -158,7 +140,7 @@ Os usuários devem ser capazes de:
 
 ## Links
 
-- Site: [Blogr]();
+- Site: [Blogr](https://08-blogr-landing-page.vercel.app);
 
 <br>
 
