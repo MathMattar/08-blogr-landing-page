@@ -51,6 +51,7 @@ function checkInputs(input) {
 }
 
 // Seleciona o formulário, adiciona o evento de envio e salva no localStorage
+//Não está funcionando! Não consigo entender o porque, aceito dicas!
 const form = document.getElementById("form-register");
 
 form.addEventListener("submit", (e) => {
@@ -66,6 +67,24 @@ form.addEventListener("submit", (e) => {
 
   form.reset();
 });
+
+// Também não está funcionando
+// const form = document.querySelector("[data-sign-up]");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+
+//   const name = document.getElementById("name").value;
+//   const email = document.getElementById("email").value;
+//   const password = document.getElementById("password").value;
+
+//   localStorage.setItem("name", name);
+//   localStorage.setItem("email", email);
+//   localStorage.setItem("password", password);
+
+//   form.reset();
+// });
+
 
 // Evento de clique para redirecionar a página
 const redirect = document.getElementById("redirect");

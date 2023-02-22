@@ -47,8 +47,9 @@ dropdownLinks.forEach((dropdownLink) => {
   });
 });
 
-// Evento de clique no corpo da página para fechar a lista ou o menu
+// Evento de clique no corpo da página para fechar a lista e/ou o menu
 document.body.addEventListener("click", (event) => {
+  
   // Verifica onde foi o clique
   const dropdownList = event.target.closest(".dropdown__list");
   const dropdownLink = event.target.closest(".dropdown__link");
@@ -60,6 +61,7 @@ document.body.addEventListener("click", (event) => {
     !event.target.closest("#icon-menu")
   ) {
     dropdownLinks.forEach((link) => {
+      
       if (link.classList.contains("--active")) {
         const activeList = link.nextElementSibling;
         const activeArrowLight = link.querySelector(".dropdown__icon");
