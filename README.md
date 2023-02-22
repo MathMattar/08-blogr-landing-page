@@ -22,11 +22,11 @@ Esta é uma solução para o desafio [Desafio Blogr landing page no Frontend Men
 
 <br>
 
-A aplicação consiste em uma landing page responsiva que inclui um menu hamburguer e dropdown que se adaptam automaticamente de acordo com as dimensões do dispositivo utilizado. Além da página principal, foi adicionada uma página de login e sign up, que inclui validação de formulário para garantir que as informações inseridas pelos usuários sejam corretas.
+A aplicação consiste em uma landing page responsiva que inclui um menu hambúrguer e dropdown que se adaptam automaticamente conforme as dimensões do dispositivo utilizado. Além da página principal, foi adicionada uma página de login e sign up, que inclui validação de formulário para garantir que as informações inseridas pelos usuários sejam corretas.
 
 Os usuários devem ser capazes de:
 
-- Visualizar o layout ideal para o site, dependendo do tamanha da tela do dispositivo;
+- Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo;
 - Estados de foco para todos os elementos interativos na página.
 
 <br>
@@ -254,13 +254,13 @@ Este é o meu primeiro projeto utilizando pré-processadores e estou muito satis
 
 <br>
 
-Durante o desenvolvimento do projeto, utilizei diversas propriedades e eventos do JavaScript para criar um sistema interativo e eficiente. Para alternar a exibição do menu hamburguer e do menu dropdown, utilizei a propriedade ```element.classList.toggle```, permitindo que o usuário possa exibir ou ocultar o menu de acordo com sua necessidade. Também adicionei uma verificação que permite exibir apenas uma opção por vez no menu dropdown.
+Durante o desenvolvimento do projeto, utilizei diversas propriedades e eventos do JavaScript para criar um sistema interativo e eficiente. Para alternar a exibição do menu hambúrguer  e do menu dropdown, utilizei a propriedade ```element.classList.toggle```, permitindo que o usuário possa exibir ou ocultar o menu de acordo com sua necessidade. Também adicionei uma verificação que permite exibir apenas uma opção por vez no menu dropdown.
 
 Para identificar qual elemento foi clicado e deve ser exposto, utilizei o método ```forEach``` em conjunto com o método ```nextElementSibling``` para facilitar a seleção de elementos relacionados ao pai para interação. Além disso, adicionei um evento responsável por fechar os menus após um clique em qualquer posição do ```body```, utilizando a propriedade event.target.closest.
 
 Para validar os campos do formulário, utilizei os eventos ```blur``` e ```invalid```. O evento ```blur``` permite verificar qual elemento perdeu o foco e começar a validação, enquanto o evento ```invalid``` bloqueia o funcionamento padrão do navegador, permitindo a exibição de mensagens personalizadas para diferentes tipos de erros pré-selecionados da propriedade ```ValidityStates```. Para garantir uma melhor experiência para o usuário, incluí mensagens claras e precisas para cada tipo de erro. Após a validação e aprovação do formulário, todo o conteúdo é salvo no ```localStorage```.
 
-Também implementei um sistema de exibição da digitação do ```input``` password, que altera o tipo do ```input``` de ```password``` para ```text``` através de um operador ternário. Adicionei um sistema de slide que se altera automaticamente a partir de um tempo pré-definido pelo metodo ```setInterval``` ou através do menu de navegação, proporcionando uma experiência mais dinâmica para o usuário.
+Também implementei um sistema de exibição da digitação do ```input``` password, que altera o tipo do ```input``` de ```password``` para ```text``` através de um operador ternário. Adicionei um sistema de slide que se altera automaticamente a partir de um tempo pré-definido pelo método ```setInterval``` ou através do menu de navegação, proporcionando uma experiência mais dinâmica para o usuário.
 
 <br>
 
@@ -339,7 +339,7 @@ const messages = {
 
 <br>
 
-***Utilização do operador ternario para simplificar o código***
+***Utilização do operador ternário para simplificar o código***
 ``` javascript
 function changeIcon() {
     iconHidden.classList.toggle("--hidden");
