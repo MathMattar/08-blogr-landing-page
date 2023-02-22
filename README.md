@@ -35,26 +35,17 @@ Os usuários devem ser capazes de:
 
 -  **Mobile**
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-<p>
-    <img width="375px" src="./assets/presentation/mobile.png"></img>
-</p>
-<p">
+<p style="text-align:center">
     <img width="375px" src="./assets/presentation/mobile-menu-active.png"></img>
 </p>
-</div>
 
 <br>
 
 - **Desktop**
 
-<div style="text-align:center">
-<p>
-    <img width="1440px" src="./assets/presentation/desktop-active.png"></img>
 <p style="display:inline; margin: 20px">
     <img width="1440px" src="./assets/presentation/desktop-menu-active.png"></img>
 </p>
-</div>
 
 <br>
 
