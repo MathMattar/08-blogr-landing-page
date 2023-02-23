@@ -33,17 +33,17 @@ Os usuários devem ser capazes de:
 
 ## Screenshot
 
--  **Mobile**
+### **Mobile**
 
-<p style="text-align:center">
+<p style="text-align:center;">
     <img width="375px" src="./assets/presentation/mobile-menu-active.png"></img>
 </p>
 
 <br>
 
-- **Desktop**
+### **Desktop**
 
-<p style="display:inline; margin: 20px">
+<p style="text-align:center;">
     <img width="1440px" src="./assets/presentation/desktop-menu-active.png"></img>
 </p>
 
@@ -256,14 +256,6 @@ Também implementei um sistema de exibição da digitação do ```input``` passw
 <br>
 
 ***Funções com propriedade ```element.classList.toggle```***
-``` javascript
-function changeVisibility() {
-  navBar.classList.toggle("--active");
-  iconMenu.classList.toggle("--hide");
-  iconCloseMenu.classList.toggle("--active");
-}
-```
-
 ``` javascript
 function toggleDropdown(dropdownLink, dropdownList, arrowLight, arrowDark) {
   dropdownLink.classList.toggle("--active");
