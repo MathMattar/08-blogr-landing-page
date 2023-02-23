@@ -47,7 +47,7 @@
 //---------------------Home styles
 .header__gradient {
     @include gradient(to bottom, $gradient-very-light-red, $gradient-light-red);
-    width: 100vw;
+    width: 100%;
     height: 60rem;
     position: absolute;
     top: 0;
@@ -60,7 +60,7 @@
     background-image: url(../images/bg-pattern-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: -35rem -26rem;
-    width: 100vw;
+    width: 100%;
     height: 60rem;
     border-bottom-left-radius: 10rem;
     padding: 5.6rem 2.4rem 15.5rem;
@@ -242,7 +242,7 @@
     .action__text {
         @include text ($overpass, $size20, $o-w3, -0.05em, 2.4rem, $neutral-white, center);
         margin: 0 1.2rem 4.8rem;
-        width: 100vw;
+        width: 100%;
     }
 
     .action__btn--start {

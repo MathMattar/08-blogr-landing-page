@@ -66,7 +66,7 @@ main {
     .second__gradient {
         position: absolute;
         background-image: linear-gradient(to bottom, $gradient-very-dark-gray-blue, $gradient-very-dark-desaturated-blue);
-        width: 100vw;
+        width: 100%;
         height: 62.5rem;
         border-radius: 0 100px;
     }
@@ -74,7 +74,7 @@ main {
     .second {
         position: relative;
         @include background-image("../images/bg-pattern-circles.svg", center -23rem, 59.6rem, no-repeat);
-        width: 100vw;
+        width: 100%;
         height: 62.5rem;
         border-radius: 0 100px 0;
         padding: 22.4rem 2.4rem 11.4rem;
@@ -82,7 +82,7 @@ main {
 
         .second__image-mobile {
             @include background-image("../images/illustration-phones.svg", center center, 38.2rem, no-repeat);
-            width: 100vw;
+            width: 100%;
             height: 100%;
             position: absolute;
             top: -28rem;
@@ -105,7 +105,7 @@ main {
     .third {
         @include background-image("../images/illustration-laptop-mobile.svg", center 6rem, 49.8rem, no-repeat);
         padding: 45.6rem 2.3rem 9.4rem 3.4rem;
-        width: 100vw;
+        width: 100%;
 
         .copy {
             display: flex;
