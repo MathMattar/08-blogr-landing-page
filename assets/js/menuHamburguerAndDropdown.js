@@ -3,14 +3,20 @@ const iconCloseMenu = document.getElementById("icon-close");
 const navBar = document.getElementById("nav-bar");
 
 // Exibir menu hamburguer
-iconMenu.addEventListener("click", changeVisibility);
-iconCloseMenu.addEventListener("click", changeVisibility);
+iconMenu.addEventListener("click", showMenu);
+iconCloseMenu.addEventListener("click", hideMenu);
 
 // Alterar o icone do menu
-function changeVisibility() {
-  navBar.classList.toggle("--active");
-  iconMenu.classList.toggle("--hide");
-  iconCloseMenu.classList.toggle("--active");
+function showMenu() {
+  navBar.classList.add("--active");
+  iconMenu.classList.add("--hide");
+  iconCloseMenu.classList.add("--active");
+}
+
+function hideMenu(){
+  navBar.classList.remove("--active");
+  iconMenu.classList.remove("--hide");
+  iconCloseMenu.classList.remove("--active");
 }
 
 // Dropdown
@@ -49,7 +55,8 @@ dropdownLinks.forEach((dropdownLink) => {
 
 // Evento de clique no corpo da página para fechar a lista e/ou o menu
 document.body.addEventListener("click", (event) => {
-  // Verifica onde foi o clique
+
+  // Verifica posição do clique
   const dropdownList = event.target.closest(".dropdown__list");
   const dropdownLink = event.target.closest(".dropdown__link");
 
@@ -69,6 +76,6 @@ document.body.addEventListener("click", (event) => {
       }
     });
 
-    changeVisibility();
+    hideMenu();
   }
 });
